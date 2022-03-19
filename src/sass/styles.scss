@@ -9,15 +9,14 @@
 @use "components/buttons";
 @use "components/cards";
 
+@use "./App.scss";
+@use "pages/Home";
+
 @use "pages/about";
 @use "pages/contact";
 @use "pages/error404";
-@use "pages/landing";
+@use "pages/landing_page";
 @use "pages/portfolio";
 
 // @use "vendors/bootstrap";
 // @use "vendors/mui";
-
-.card {
-    color: blue;
-}

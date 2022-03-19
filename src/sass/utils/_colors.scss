@@ -1,5 +1,6 @@
 /* CSS HEX */
 $clr-light: #ffffff;
+$clr-med: #aaa;
 $clr-dark: #303030;
 
 /* SCSS HEX */
@@ -16,6 +17,7 @@ $gradient-top: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-right: linear-gradient(
     90deg,
     #f6b345ff,
@@ -23,6 +25,7 @@ $gradient-right: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-bottom: linear-gradient(
     180deg,
     #f6b345ff,
@@ -30,6 +33,7 @@ $gradient-bottom: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-left: linear-gradient(
     270deg,
     #f6b345ff,
@@ -37,6 +41,7 @@ $gradient-left: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-top-right: linear-gradient(
     45deg,
     #f6b345ff,
@@ -44,6 +49,7 @@ $gradient-top-right: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-bottom-right: linear-gradient(
     135deg,
     #f6b345ff,
@@ -51,6 +57,7 @@ $gradient-bottom-right: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-top-left: linear-gradient(
     225deg,
     #f6b345ff,
@@ -58,6 +65,7 @@ $gradient-top-left: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-bottom-left: linear-gradient(
     315deg,
     #f6b345ff,
@@ -65,4 +73,5 @@ $gradient-bottom-left: linear-gradient(
     #4dd7c3ff,
     #fdeb85ff
 );
+
 $gradient-radial: radial-gradient(#f6b345ff, #f0745eff, #4dd7c3ff, #fdeb85ff);

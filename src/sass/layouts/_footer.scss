@@ -1,1 +1,10 @@
 @use "../utils/" as *;
+
+.footer {
+    height: 10vh;
+    background: $terra-cotta;
+    text-align: center;
+
+    font-family: $signature;
+    font-size: $fs-body;
+}
