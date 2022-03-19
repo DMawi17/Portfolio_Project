@@ -1,10 +1,11 @@
-import "./App.scss";
-import Landing from "./pages/landing/Landing";
+import Landing from "./pages/Landing";
+import Cards from "./components/Cards";
 
 function App() {
     return (
         <div className="App">
             <Landing />
+            <Cards />
         </div>
     );
 }

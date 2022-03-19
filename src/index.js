@@ -1,5 +1,6 @@
 import { render } from "react-dom";
 import App from "./App";
+import "./sass/styles.scss";
 
 const rootElement = document.getElementById("root");
 
