@@ -1,1 +1,12 @@
 @use "../utils/" as *;
+
+.navigation {
+    height: 10vh;
+    background: $turquoise;
+    text-align: center;
+
+    font-family: $ff-primary;
+
+    position: sticky;
+    top: 0;
+}
