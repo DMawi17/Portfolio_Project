@@ -3,7 +3,7 @@ $clr-light: #fff;
 $clr-med: #aaa;
 $clr-dark: #303030;
 
-$clr-hue: 210;
+$clr-hue: 270;
 
 $clr-primary: hsl($clr-hue, 69%, 61%);
 $clr-secondary: hsl($clr-hue, 69%, 61%);
@@ -15,6 +15,10 @@ $clr-txt-light: hsl($clr-hue, 8%, 65%);
 $clr-input: hsl($clr-hue, 70%, 96%);
 $clr-body: hsl($clr-hue, 60%, 99%);
 $clr-container: $clr-light;
+
+:export {
+    clrPrimary: $clr-primary;
+}
 
 // /* SCSS HEX */
 // $maximum-yellow-red: #f6b345ff;
