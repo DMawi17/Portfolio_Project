@@ -1,5 +1,6 @@
 @use "./fonts";
 
+/* Main fonts */
 $ff-primary: "Poppins", sans-serif;
 $ff-secondary: "Source Code Pro", monospace;
 $ff-tertiary: "WindSong", cursive;
@@ -10,10 +11,47 @@ $b-phantom: "BlackPhantom";
 $h-softed: "HartoneSofted";
 $signature: "Signature";
 
+/* Font size */
+$fs-l: 2rem;
+$fs-h1: 1.5rem;
+$fs-h2: 1.25rem;
+$fs-h3: 1.125rem;
+$fs-body: 0.938rem;
+$fs-sm: 0.813rem;
+$fs-xsm: 0.75rem;
+
+/* Font weight */
+$fw-thin: 100;
+$fw-light: 200;
 $fw-reg: 400;
+$fs-semi-bold: 600;
 $fw-bold: 900;
 
-$fs-h1: 3rem;
-$fs-h2: 2.24rem;
-$fs-h3: 1.25rem;
-$fs-body: 1rem;
+/* z-index */
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+    $fs-l: 3rem;
+    $fs-h1: 2.25rem;
+    $fs-h2: 1.5rem;
+    $fs-h3: 1.25rem;
+    $fs-body: 1rem;
+    $fs-sm: 0.875rem;
+    $fs-xsm: 0.813rem;
+}
+
+/* Margins bottoms*/
+$mb-025: 0.25rem;
+$mb-05: 0.5rem;
+$mb-075: 0.75rem;
+$mb-10: 0.1rem;
+$mb-15: 1.5rem;
+$mb-20: 2rem;
+$mb-25: 2.5rem;
+$mb-30: 3rem;
+
+/* Components */
+$header-height: 3rem;

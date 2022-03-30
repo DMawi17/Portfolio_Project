@@ -1,0 +1,77 @@
+@use "../utils/" as *;
+
+.nav {
+    max-width: 968px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__logo,
+.nav__toggle {
+    color: $clr-title;
+    font-weight: $fw-reg;
+}
+
+.nav__logo:hover {
+    color: $clr-primary;
+}
+
+.nav__toggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.nav__toggle:hover {
+    color: $clr-primary;
+}
+
+@media (max-width: 767px) {
+    .nav__menu {
+        position: fixed;
+        bottom: 0%;
+        left: 0;
+        width: 100%;
+        background-color: $clr-body;
+        padding: 2rem 1.5rem 4rem;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 1.5rem 1.5rem 0 0;
+        transition: 0.3s;
+    }
+}
+
+.nav__list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.nav__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: $fs-sm;
+    color: $clr-title;
+    font-weight: $fw-reg;
+}
+
+.nav__link:hover {
+    color: $clr-primary;
+}
+
+.nav__icon {
+    font-size: 1.2rem;
+}
+
+.nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $clr-primary;
+}
+
+.nav__close:hover {
+    color: $clr-tertiary;
+}
