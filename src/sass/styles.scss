@@ -1,16 +1,27 @@
 // @use "base/reset";
 // @use "base/typography";
 
+/* LAYOUTS */
 @use "layouts/footer";
 @use "layouts/header";
 @use "layouts/nav";
 @use "layouts/forms";
 
+/* COMPONENTS */
+
 @use "components/buttons";
 @use "components/cards";
+@use "components/intro";
+@use "components/main";
+@use "components/scrollDown";
+@use "components/socials";
+
+/* CORE */
 
 @use "./App.scss";
 @use "pages/Home";
+
+/* PAGES */
 
 @use "pages/about";
 @use "pages/contact";

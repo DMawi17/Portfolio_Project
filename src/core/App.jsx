@@ -1,9 +1,13 @@
-import Home from "./Home";
+import Header from "../components/Header";
+import Main from "../components/Main";
+import About from "../pages/About";
 
 function App() {
     return (
         <div className="app">
-            <Home />
+            <Header />
+            <Main />
+            <About />
         </div>
     );
 }

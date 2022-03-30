@@ -1,0 +1,25 @@
+@use "../utils" as *;
+
+.home__scroll {
+    display: none;
+}
+
+.home__scroll-button {
+    color: $clr-primary;
+    transition: 0.3s;
+}
+
+.home__scroll-button:hover {
+    transform: translateY(0.25rem);
+}
+
+.home__scroll-name {
+    font-size: $fs-sm;
+    color: $clr-title;
+    font-weight: $fw-reg;
+    margin-right: $mb-25;
+}
+
+.home__scroll-arrow {
+    font-size: 1.25rem;
+}
