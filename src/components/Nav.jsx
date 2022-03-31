@@ -20,34 +20,35 @@ function Navigation() {
                 <div className="nav__menu" id="nav_menu">
                     <ul className="nav__list grid" onClick={handleToggle}>
                         <li className="nav_item">
-                            <Link to="/" className="nav__link">
+                            <a href="#home" className="nav__link">
                                 <FontAwesomeIcon
                                     icon={solid("house-chimney")}
                                     className="nav__icon"
                                     // className="uil uil-home"
                                 />{" "}
                                 Home
-                            </Link>
+                            </a>
                         </li>
+
                         <li className="nav_item">
-                            <Link to="/about" className="nav__link">
+                            <a href="#about" className="nav__link">
                                 <FontAwesomeIcon
                                     icon={solid("user")}
                                     // className="uil uil-user"
                                     className="nav__icon"
                                 />{" "}
                                 About
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav_item">
-                            <Link to="/skills" className="nav__link">
+                            <a href="#skills" className="nav__link">
                                 <FontAwesomeIcon
                                     icon={solid("file-alt")}
                                     // className="uil uil-file-alt"
                                     className="nav__icon"
                                 />{" "}
                                 Skills
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav_item">
                             <Link to="/service" className="nav__link">
