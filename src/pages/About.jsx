@@ -2,12 +2,20 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import AboutImg from "../svgComponents/AboutImg";
 import colors from "../sass/utils/_colors.scss";
+import Title from "../components/Title";
+import { MainBtn } from "../components/Buttons";
 
 function About() {
+    const titleValues = {
+        title: "About Me",
+        subtitle: "My introduction",
+    };
+
+    const fas = { element: "Download CV", icon: solid("download") };
+
     return (
         <section className="about section" id="about">
-            <h2 className="section__title">About Me</h2>
-            <span className="section__subtitle">My introduction</span>
+            <Title {...titleValues} />
 
             <div className="about__container container grid">
                 <AboutImg fill={colors.clrTertiary} />
@@ -20,6 +28,7 @@ function About() {
                         molestiae, reiciendis illo ex, itaque fugiat praesentium
                         animi.
                     </p>
+
                     <div className="about__info">
                         <div>
                             <span className="about__info-title">03+</span>
@@ -40,14 +49,10 @@ function About() {
                             </span>
                         </div>
                     </div>
+
                     <div className="about__button">
                         <a href="/" className="button button--flex">
-                            Download CV{" "}
-                            <FontAwesomeIcon
-                                icon={solid("download")}
-                                className="button__icon"
-                                d
-                            />
+                            <MainBtn {...fas} />
                         </a>
                     </div>
                 </div>

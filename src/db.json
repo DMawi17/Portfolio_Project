@@ -21,5 +21,9 @@
                 { "title": "Firebase", "data": "60%" }
             ]
         }
-    ]
+    ],
+    "qualification": {
+        "title": "Qualification",
+        "subtitle": "My personal journey"
+    }
 }

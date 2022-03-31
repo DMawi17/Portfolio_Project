@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { MainBtn } from "./Buttons";
 
 function Intro() {
+    const fas = { element: "Contact Me", icon: solid("paper-plane") };
+
     return (
         <div className="home__data">
             <h1 className="home__title">Hi, I'm Mawi</h1>
@@ -12,13 +13,9 @@ function Intro() {
                 attractive and user-friendly UI/UX elements.
             </p>
 
-            <Link to="/contact" className="button button--flex">
-                Contact Me{" "}
-                <FontAwesomeIcon
-                    icon={solid("paper-plane")}
-                    className="nav__icon"
-                />
-            </Link>
+            <a href="/contact" className="button button--flex">
+                <MainBtn {...fas} />
+            </a>
         </div>
     );
 }

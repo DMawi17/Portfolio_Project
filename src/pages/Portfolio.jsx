@@ -1,12 +1,17 @@
 import Skills from "../components/skills/Skills";
 import data from "../db.json";
 import { v4 } from "uuid";
+import Title from "../components/Title";
 
 function Portfolio() {
+    const titleValues = {
+        title: "Skills",
+        subtitle: "My technical level",
+    };
     return (
         <section className="skills section" id="skills">
-            <h2 className="section__title">Skills</h2>
-            <span className="section__subtitle">My technical level</span>
+            <Title {...titleValues} />
+
             <div className="skills__container container grid">
                 <div>
                     {data.skills.map((skill) => (
