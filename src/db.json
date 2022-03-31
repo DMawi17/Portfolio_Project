@@ -1,0 +1,25 @@
+{
+    "skills": [
+        {
+            "title": "Frontend development",
+            "subtitle": "More than 3 month",
+            "iconName": "code",
+            "skill_list": [
+                { "title": "HTML", "data": "90%" },
+                { "title": "CSS", "data": "80%" },
+                { "title": "JavaScript", "data": "60%" },
+                { "title": "React", "data": "70%" }
+            ]
+        },
+        {
+            "title": "Backend Development",
+            "subtitle": "More than 3 month",
+            "iconName": "server",
+            "skill_list": [
+                { "title": "NodeJs", "data": "60%" },
+                { "title": "Express", "data": "70%" },
+                { "title": "Firebase", "data": "60%" }
+            ]
+        }
+    ]
+}
