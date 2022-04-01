@@ -26,6 +26,8 @@ export const DataProvider = ({ children }) => {
         code: solid("code"),
         paperPlane: solid("paper-plane"),
         download: solid("download"),
+        arrowDwn: solid("arrow-down"),
+        mouse: solid("computer-mouse"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),
@@ -38,6 +40,14 @@ export const DataProvider = ({ children }) => {
         introBtn: {
             name: "Contact Me",
             icon: icons.paperPlane,
+        },
+
+        scrollDwnBtn: {
+            name: "Scroll down",
+            icons: {
+                mouse: icons.mouse,
+                arrowDwn: icons.arrowDwn,
+            },
         },
 
         aboutBtn: {
