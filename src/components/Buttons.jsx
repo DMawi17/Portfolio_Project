@@ -21,7 +21,6 @@ function QualificationBtn({ name, icon }) {
 function SocialsBtn({ url, icon }) {
     return (
         <a
-            
             href={url}
             target="_blank"
             className="home__social-icon"
@@ -32,4 +31,17 @@ function SocialsBtn({ url, icon }) {
     );
 }
 
-export { QualificationBtn, MainBtn, SocialsBtn };
+function ScrollDownBtn({ name, icons }) {
+    return (
+        <a href="/about" className="home__scroll-button button-flex">
+            <FontAwesomeIcon
+                icon={icons.mouse}
+                className="home__scroll-mouse"
+            />{" "}
+            <span className="home__scroll-name">{name}</span>{" "}
+            <FontAwesomeIcon icon={icons.arrowDwn} />
+        </a>
+    );
+}
+
+export { QualificationBtn, MainBtn, SocialsBtn, ScrollDownBtn };
