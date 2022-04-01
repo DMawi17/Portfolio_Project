@@ -1,7 +1,9 @@
 import Header from "../components/Header";
 import Main from "../components/Main";
 import About from "../pages/About";
-import Portfolio from "../pages/Portfolio";
+import Qualification from "../components/qualification/Qualification";
+
+import Skills from "../components/skills/Skills";
 
 function App() {
     return (
@@ -9,7 +11,9 @@ function App() {
             <Header />
             <Main />
             <About />
-            <Portfolio />
+            <Skills />
+            {/* <Portfolio /> */}
+            <Qualification />
         </div>
     );
 }
