@@ -1,21 +1,35 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function MainBtn({ element, icon }) {
+function MainBtn({ name, icon }) {
     return (
         <>
-            {element}
+            {name}
             <FontAwesomeIcon icon={icon} className="button__icon" />
         </>
     );
 }
 
-function QualificationBtn({ element, icon }) {
+function QualificationBtn({ name, icon }) {
     return (
         <div className="qualification__button button--flex">
             <FontAwesomeIcon icon={icon} className="qualification__icon" />
-            {element}
+            {name}
         </div>
     );
 }
 
-export { QualificationBtn, MainBtn };
+function SocialsBtn({ url, icon }) {
+    return (
+        <a
+            
+            href={url}
+            target="_blank"
+            className="home__social-icon"
+            rel="noreferrer"
+        >
+            <FontAwesomeIcon icon={icon} />
+        </a>
+    );
+}
+
+export { QualificationBtn, MainBtn, SocialsBtn };

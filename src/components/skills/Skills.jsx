@@ -1,33 +1,24 @@
-import React, { useState } from "react";
-import SkillList from "./SkillList";
+import { useData } from "../../contexts/data-hooks";
+import MainTitle from "../titles/MainTitle";
+import SkillContent from "./SkillContent";
 import { v4 } from "uuid";
-import SkillHeader from "./SkillHeader";
 
-function Skills(skill) {
-    const [toggleOpen, setToggleOpen] = useState(false);
-
-    const { skills } = skill;
-    const { skill_list } = skills;
-
-    const handleToggle = (e) => {
-        setToggleOpen(!toggleOpen);
-    };
+function Skills() {
+    const { skills } = useData();
+    const { skill_title, skill_content } = skills;
 
     return (
-        <div className="skills__content ">
-            <SkillHeader
-                skills={skills}
-                handleToggle={handleToggle}
-                toggleOpen={toggleOpen}
-            />
-            {toggleOpen && (
-                <div className="skills__list grid">
-                    {skill_list.map((skillEl) => (
-                        <SkillList key={v4()} {...skillEl} />
+        <section className="skills section" id="skills">
+            <MainTitle {...skill_title} />
+
+            <div className="skills__container container grid">
+                <div>
+                    {skill_content.map((skill) => (
+                        <SkillContent key={v4()} {...skill} />
                     ))}
                 </div>
-            )}
-        </div>
+            </div>
+        </section>
     );
 }
 

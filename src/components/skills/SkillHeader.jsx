@@ -1,18 +1,21 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
+import SubMainTitle from "../titles/SubMainTitle";
+import { useData } from "../../contexts/data-hooks";
 
-function SkillHeader(props) {
-    const { skills, handleToggle, toggleOpen } = props;
+function SkillHeader({ props }) {
+    const [skill_header, handleToggle, toggleOpen] = props;
+
+    const { icons } = useData();
+    const { angle_down, code } = icons;
 
     return (
         <div className="skills__header">
-            <FontAwesomeIcon icon={solid("code")} className="skills__icon" />
-            <div>
-                <h1 className="skills__title">{skills.title}</h1>
-                <span className="skills__subtitle">{skills.subtitle}</span>
-            </div>
+            <FontAwesomeIcon icon={code} className="skills__icon" />
+
+            <SubMainTitle {...skill_header} />
+
             <FontAwesomeIcon
-                icon={solid("angle-down")}
+                icon={angle_down}
                 className="skills__arrow"
                 style={toggleOpen ? { transform: "rotate(-180deg)" } : {}}
                 onClick={() => handleToggle()}

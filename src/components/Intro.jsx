@@ -1,20 +1,20 @@
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { MainBtn } from "./Buttons";
+import { useData } from "../contexts/data-hooks";
 
 function Intro() {
-    const fas = { element: "Contact Me", icon: solid("paper-plane") };
+    const { intro, buttons } = useData();
+
+    const { intro_title, intro_description } = intro;
+    const { introBtn } = buttons;
 
     return (
         <div className="home__data">
-            <h1 className="home__title">Hi, I'm Mawi</h1>
-            <h3 className="home__subtitle">Web Developer</h3>
-            <p className="home_description">
-                I build applications for the web because I like interacting with
-                attractive and user-friendly UI/UX elements.
-            </p>
+            <h1 className="home__title">{intro_title.title}</h1>
+            <h3 className="home__subtitle">{intro_title.subtitle}</h3>
+            <p className="home_description">{intro_description}</p>
 
             <a href="/contact" className="button button--flex">
-                <MainBtn {...fas} />
+                <MainBtn {...introBtn} />
             </a>
         </div>
     );
