@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import SubMainTitle from "../titles/SubMainTitle";
+import { SubMainTitleSkills } from "../titles/SubMainTitle";
 import { useData } from "../../contexts/data-hooks";
 
 function SkillHeader({ props }) {
@@ -12,7 +12,7 @@ function SkillHeader({ props }) {
         <div className="skills__header">
             <FontAwesomeIcon icon={code} className="skills__icon" />
 
-            <SubMainTitle {...skill_header} />
+            <SubMainTitleSkills {...skill_header} />
 
             <FontAwesomeIcon
                 icon={angle_down}

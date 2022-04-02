@@ -1,4 +1,4 @@
-function SubMainTitle({ title, subtitle }) {
+function SubMainTitleSkills({ title, subtitle }) {
     return (
         <div>
             <h1 className="skills__title">{title}</h1>
@@ -7,4 +7,6 @@ function SubMainTitle({ title, subtitle }) {
     );
 }
 
-export default SubMainTitle;
+// function SubMainTitleSkills() {}
+
+export { SubMainTitleSkills };

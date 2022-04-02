@@ -1,14 +1,12 @@
 import MainTitle from "../titles/MainTitle";
-import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 import { QualificationBtn } from "../Buttons";
 import QualificationContent from "./QualificationContent";
 import { v4 } from "uuid";
+import { useData } from "../../contexts/data-hooks";
 
-function Qualification({ qualification }) {
-    const fas = [
-        { element: "Work", icon: solid("graduation-cap") },
-        { element: "Education", icon: solid("briefcase") },
-    ];
+function Qualification() {
+    const { buttons, qualification } = useData();
+    const { qualificationBtn } = buttons;
 
     return (
         <section className="qualification section">
@@ -16,7 +14,7 @@ function Qualification({ qualification }) {
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">
-                    {fas.map((el) => (
+                    {qualificationBtn.map((el) => (
                         <QualificationBtn key={v4()} {...el} />
                     ))}
                 </div>
