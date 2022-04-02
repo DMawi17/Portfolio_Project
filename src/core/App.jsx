@@ -3,13 +3,13 @@ import About from "../pages/About";
 import Qualification from "../components/qualification/Qualification";
 
 import Skills from "../components/skills/Skills";
-import LandingPage from "../pages/LandingPage";
+import Home from "../pages/Home";
 
 function App() {
     return (
         <div className="app">
             <Header />
-            <LandingPage />
+            <Home />
             <About />
             <Skills />
             <Qualification />

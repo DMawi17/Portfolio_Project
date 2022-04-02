@@ -8,10 +8,10 @@ function Intro() {
     const { introBtn } = buttons;
 
     return (
-        <div className="home__data">
-            <h1 className="home__title">{intro_title.title}</h1>
-            <h3 className="home__subtitle">{intro_title.subtitle}</h3>
-            <p className="home_description">{intro_description}</p>
+        <div className="intro">
+            <h1 className="intro__title">{intro_title.title}</h1>
+            <h3 className="intro__subtitle">{intro_title.subtitle}</h3>
+            <p className="intro__description">{intro_description}</p>
 
             <a href="/contact" className="button button--flex">
                 <MainBtn {...introBtn} />

@@ -29,17 +29,8 @@
     color: $clr-title;
 }
 
-.about__info-name {
-    font-size: $fs-sm;
-}
-
 .about__info-name,
 .about__info-title {
     display: block;
     text-align: center;
-}
-
-.about__button {
-    display: flex;
-    justify-content: center;
 }
