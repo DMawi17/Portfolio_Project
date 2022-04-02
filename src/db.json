@@ -60,7 +60,37 @@
     },
 
     "qualification": {
-        "title": "Qualification",
-        "subtitle": "My personal journey"
+        "title": "Qualification & Experience",
+        "subtitle": "My personal journey",
+        "qualification_contents": [
+            {
+                "type": "education",
+                "subject": "Web Development",
+                "company": "DCI gGmbH",
+                "place": "Berlin",
+                "time": "10/2020 - 01/2022"
+            },
+            {
+                "type": "work",
+                "subject": "Web Developer (intern)",
+                "company": "Active It Recruitment",
+                "place": "Remote",
+                "time": "01/2022 - 31/2022"
+            },
+            {
+                "type": "education",
+                "subject": "Accounting and Statistics",
+                "company": "Middlesex University",
+                "place": "London",
+                "time": "09/2009 - 09/2012"
+            },
+            {
+                "type": "work",
+                "subject": "Senior Cabin Crew",
+                "company": "Laudamotion",
+                "place": "Stuttgart",
+                "time": "01/2019 - 12/2020"
+            }
+        ]
     }
 }

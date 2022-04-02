@@ -13,8 +13,8 @@
 @use "components/cards";
 @use "components/intro";
 @use "components/main";
-@use "components/scrollDown";
-@use "components/socials";
+@use "components/skills";
+@use "components/qualification";
 
 /* CORE */
 
@@ -27,7 +27,7 @@
 @use "pages/contact";
 @use "pages/error404";
 @use "pages/landing_page";
-@use "pages/portfolio";
+// @use "pages/portfolio";
 
 // @use "vendors/bootstrap";
 // @use "vendors/mui";

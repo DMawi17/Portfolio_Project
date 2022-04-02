@@ -1,10 +1,19 @@
-import React from "react";
-import Title from "../titles/MainTitle";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function QualificationList() {
+function QualificationList({ props }) {
+    const { cal, list } = props;
+    const { subject, company, place, time } = list;
+
     return (
-        <div className="qualification__data">
-            <Title />
+        <div>
+            <h3 className="qualification__title">{subject}</h3>
+            <span className="qualification__subtitle">
+                {place} - {company}
+            </span>
+            <div className="qualification__calendar">
+                <FontAwesomeIcon icon={cal} />
+                {time}
+            </div>
         </div>
     );
 }

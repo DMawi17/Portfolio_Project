@@ -36,6 +36,7 @@ function About() {
                     <div className="about__info">
                         {arrContent.map((elem) => renderAboutList(elem))}
                     </div>
+
                     <div className="about__button">
                         <a href="/" className="button button--flex">
                             <MainBtn {...aboutBtn} />

@@ -11,20 +11,18 @@ function LandingPage() {
     const { scrollDwnBtn } = buttons;
 
     return (
-        <div className="main">
-            <section className="section home" id="home">
-                <div className="home__container container grid">
-                    <div className="home__content grid">
-                        <Socials />
-                        <Blob fill={colors.clrPrimary} />
-                        <Intro />
-                        <div className="home__scroll">
-                            <ScrollDownBtn {...scrollDwnBtn} />
-                        </div>
+        <section className="section home" id="home">
+            <div className="home__container container grid">
+                <div className="home__content grid">
+                    <Socials />
+                    <Blob fill={colors.clrPrimary} />
+                    <Intro />
+                    <div className="home__scroll">
+                        <ScrollDownBtn {...scrollDwnBtn} />
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
     );
 }
 

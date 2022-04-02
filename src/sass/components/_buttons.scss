@@ -1,1 +1,92 @@
-@use "../utils/" as u;
+@use "../utils/" as *;
+
+// GENERAL BUTTONS
+.button {
+    display: inline-block;
+    background-color: $clr-primary;
+    color: $clr-light;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: $fw-reg;
+
+    &:hover {
+        background-color: $clr-tertiary;
+        margin-left: $mb-05;
+        transition: 0.3s;
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        margin-left: $mb-05;
+        transition: 0.3s;
+    }
+
+    &-flex {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+
+// SOCIAL BUTTONS
+.home__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+
+    &-icon {
+        font-size: 1.2rem;
+        color: $clr-primary;
+    }
+
+    &-icon:hover {
+        color: $clr-tertiary;
+    }
+}
+
+// SCROLL BUTTON
+.home__scroll {
+    display: none;
+
+    &-button {
+        color: $clr-primary;
+        transition: 0.3s;
+    }
+    &-button:hover {
+        transform: translateY(0.25rem);
+    }
+    &-mouse {
+        font-size: 2rem;
+    }
+    &-name {
+        font-size: $fs-sm;
+        color: $clr-title;
+        font-weight: $fw-reg;
+        margin-right: $mb-025;
+    }
+    &-arrow {
+        font-size: 1.25rem;
+    }
+}
+
+// ABOUT BUTTON
+.about__button {
+    display: flex;
+    justify-content: center;
+}
+
+// SKILL BUTTON
+.skills__arrow {
+    margin-left: auto;
+    transition: 0.4s;
+}
+
+// QUALIFICATION BUTTON
+.qualification__button {
+    font-size: $fs-h3;
+    font-weight: $fw-reg;
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: $mb-025;
+}

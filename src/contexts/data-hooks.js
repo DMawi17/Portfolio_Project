@@ -7,17 +7,10 @@ export const useData = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
     const [data] = useState(rowData);
-    const [toggleOpen, setToggleOpen] = useState(false);
 
     // Skills and Qualification:
 
     const { intro, about, skills, qualification } = data;
-
-    // Toggle function for SkillContent:
-
-    const handleToggle = (e) => {
-        setToggleOpen(!toggleOpen);
-    };
 
     // Icons:
 
@@ -28,6 +21,9 @@ export const DataProvider = ({ children }) => {
         download: solid("download"),
         arrowDwn: solid("arrow-down"),
         mouse: solid("computer-mouse"),
+        education: solid("graduation-cap"),
+        work: solid("briefcase"),
+        cal: solid("calendar-days"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),
@@ -71,6 +67,18 @@ export const DataProvider = ({ children }) => {
                 icon: icons.fabCodepen,
             },
         ],
+
+        qualificationBtn: [
+            {
+                name: "Education",
+                icon: icons.education,
+            },
+
+            {
+                name: "Work",
+                icon: icons.work,
+            },
+        ],
     };
 
     /* ...................................................................... */
@@ -82,8 +90,6 @@ export const DataProvider = ({ children }) => {
                 about,
                 skills,
                 qualification,
-                handleToggle,
-                toggleOpen,
                 icons,
                 buttons,
             }}
