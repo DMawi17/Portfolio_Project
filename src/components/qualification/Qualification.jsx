@@ -5,8 +5,11 @@ import { v4 } from "uuid";
 import { useData } from "../../contexts/data-hooks";
 
 function Qualification() {
-    const { buttons, qualification } = useData();
+    const { buttons, qualification, icons } = useData();
+
     const { qualificationBtn } = buttons;
+    const { qualification_contents } = qualification;
+    const { cal } = icons;
 
     return (
         <section className="qualification section">
@@ -19,8 +22,10 @@ function Qualification() {
                     ))}
                 </div>
 
-                <div className="qualification__section">
-                    <QualificationContent />
+                <div className="qualification__sections">
+                    <QualificationContent
+                        props={{ qualification_contents, cal }}
+                    />
                 </div>
             </div>
         </section>

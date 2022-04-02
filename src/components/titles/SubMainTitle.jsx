@@ -7,6 +7,6 @@ function SubMainTitleSkills({ title, subtitle }) {
     );
 }
 
-// function SubMainTitleSkills() {}
+
 
 export { SubMainTitleSkills };

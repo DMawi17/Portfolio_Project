@@ -79,3 +79,19 @@
     margin-left: auto;
     transition: 0.4s;
 }
+
+// QUALIFICATION BUTTON
+.qualification__button {
+    font-size: $fs-h3;
+    font-weight: $fw-reg;
+    cursor: pointer;
+
+    &:hover {
+        color: $clr-primary;
+    }
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: $mb-025;
+}

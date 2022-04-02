@@ -23,6 +23,7 @@ export const DataProvider = ({ children }) => {
         mouse: solid("computer-mouse"),
         education: solid("graduation-cap"),
         work: solid("briefcase"),
+        cal: solid("calendar"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),
