@@ -14,26 +14,26 @@ function QualificationContent({ props }) {
     };
 
     return (
-        <>
+        <div className="qualification_contents ">
             {qualification_contents.map((list, i) => {
                 if (i % 2 === 0) {
                     return (
                         <div key={v4()} className="qualification__data">
                             <QualificationList props={{ list, cal }} />
-                            {divider()}
+                            {divider()} {/* after */}
                         </div>
                     );
                 } else {
                     return (
                         <div key={v4()} className="qualification__data">
-                            <div></div>
-                            {divider()}
+                            <div>{/* this empty div is a placeholder */}</div>
+                            {divider()} {/* before */}
                             <QualificationList props={{ list, cal }} />
                         </div>
                     );
                 }
             })}
-        </>
+        </div>
     );
 }
 

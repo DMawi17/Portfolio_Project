@@ -5,7 +5,6 @@ function QualificationList({ props }) {
     const { subject, company, place, time } = list;
 
     return (
-        // <div className="qualification__data">
         <div>
             <h3 className="qualification__title">{subject}</h3>
             <span className="qualification__subtitle">
@@ -16,7 +15,6 @@ function QualificationList({ props }) {
                 {time}
             </div>
         </div>
-        // </div>
     );
 }
 

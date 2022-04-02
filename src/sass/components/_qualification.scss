@@ -20,12 +20,12 @@
 .qualification__subtitle {
     display: inline-block;
     font-size: $fs-sm;
-    margin-bottom: $mb-10;
+    margin-bottom: $mb-05;
 }
 
 .qualification__calendar {
     font-size: $fs-xsm;
-    color: $clr-txt;
+    color: $clr-txt-light;
 }
 
 .qualification__rounder {
@@ -45,7 +45,7 @@
 }
 
 .qualification [data-content] {
-    display: none;
+    // display: none;
 }
 
 .qualification__active[data-content] {
