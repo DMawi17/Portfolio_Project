@@ -84,11 +84,6 @@
 .qualification__button {
     font-size: $fs-h3;
     font-weight: $fw-reg;
-    cursor: pointer;
-
-    &:hover {
-        color: $clr-primary;
-    }
 }
 
 .qualification__icon {
