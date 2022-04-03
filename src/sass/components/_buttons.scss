@@ -11,8 +11,8 @@
 
     &:hover {
         background-color: $clr-tertiary;
-        margin-left: $mb-05;
-        transition: 0.3s;
+        // margin-left: $mb-05; // FIXME:
+        // transition: 0.3s;
     }
 
     &__icon {
@@ -24,6 +24,21 @@
     &-flex {
         display: inline-flex;
         align-items: center;
+    }
+
+    &-small {
+        padding: 0.75rem 1rem;
+    }
+
+    &-link {
+        padding: 0;
+        background-color: transparent;
+        color: $clr-primary;
+
+        &:hover {
+            background-color: transparent;
+            color: $clr-tertiary;
+        }
     }
 }
 
@@ -89,4 +104,18 @@
 .qualification__icon {
     font-size: 1.8rem;
     margin-right: $mb-025;
+}
+
+// SERVICE BUTTON
+.services__button {
+    cursor: pointer;
+    font-style: $fs-sm;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        .button__icon {
+            transform: translateX(0.25rem);
+        }
+    }
 }

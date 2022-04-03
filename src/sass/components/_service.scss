@@ -1,0 +1,87 @@
+@use "../utils" as *;
+
+.services {
+    &__container {
+        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__content {
+        position: relative;
+        background-color: $clr-container;
+        padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+        border-radius: 0.25rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+        transition: 0.3s;
+
+        &:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+        }
+    }
+
+    &__icon {
+        display: block;
+        font-size: 1.5rem;
+        color: $clr-primary;
+        margin-bottom: $mb-10;
+    }
+
+    &__title {
+        font-size: $fs-h3;
+        margin-bottom: $mb-10;
+        font-weight: $fw-reg;
+    }
+
+    &__modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1rem;
+        z-index: $z-modal;
+        // opacity: 0;
+        // visibility: hidden;
+        transition: 0.3s;
+
+        &-content {
+            position: relative;
+            background-color: $clr-container;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+        }
+
+        &-services {
+            row-gap: 1rem;
+        }
+
+        &-service {
+            display: flex;
+            align-items: center;
+        }
+
+        &-title {
+            font-style: $fs-h3;
+            font-weight: $fw-reg;
+            margin-bottom: $mb-15;
+        }
+
+        &-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 1.5rem;
+            color: $clr-primary;
+            cursor: pointer;
+        }
+
+        &-icon {
+            color: $clr-primary;
+            margin-right: $mb-025;
+        }
+    }
+}

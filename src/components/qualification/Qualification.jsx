@@ -1,19 +1,19 @@
+import QualificationContent from "./QualificationContent";
 import MainTitle from "../titles/MainTitle";
 import { QualificationBtn } from "../Buttons";
-import QualificationContent from "./QualificationContent";
-import { v4 } from "uuid";
 import { useData } from "../../contexts/data-hooks";
+import { v4 } from "uuid";
 
 function Qualification() {
     const { buttons, qualification, icons } = useData();
 
     const { qualificationBtn } = buttons;
-    const { qualification_contents } = qualification;
+    const { qualification_title, qualification_contents } = qualification;
     const { cal } = icons;
 
     return (
         <section className="qualification section">
-            <MainTitle {...qualification} />
+            <MainTitle {...qualification_title} />
 
             <div className="qualification__container container">
                 <div className="qualification__tabs">

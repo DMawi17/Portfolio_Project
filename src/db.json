@@ -60,8 +60,10 @@
     },
 
     "qualification": {
-        "title": "Qualification & Experience",
-        "subtitle": "My personal journey",
+        "qualification_title": {
+            "title": "Qualification & Experience",
+            "subtitle": "My personal journey"
+        },
         "qualification_contents": [
             {
                 "type": "education",
@@ -91,6 +93,16 @@
                 "place": "Stuttgart",
                 "time": "01/2019 - 12/2020"
             }
+        ]
+    },
+
+    "service": {
+        "service_title": { "title": "Services", "subtitle": "What I offer" },
+        "service_content": [
+            "I develope user interfaces.",
+            "Web page development.",
+            "I create ux element interactions.",
+            "I position you company brand"
         ]
     }
 }
