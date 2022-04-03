@@ -17,7 +17,7 @@ function Service() {
                 />
             </div>
         </div>
-    );
+    )
 }
 
 export default Service;

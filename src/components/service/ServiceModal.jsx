@@ -4,7 +4,6 @@ import { v4 } from "uuid";
 
 function ServiceModal({ props }) {
     const { icons, service_content, handleModal } = props;
-    const { close, check_circle } = icons;
 
     return (
         <div className="services__modal">
@@ -13,7 +12,7 @@ function ServiceModal({ props }) {
                     UI/UX <br /> Designer
                 </h4>
                 <FontAwesomeIcon
-                    icon={close}
+                    icon={icons.close}
                     className="services__modal-close grid"
                     onClick={() => handleModal()}
                 />
