@@ -12,7 +12,7 @@
     &:hover {
         background-color: $clr-tertiary;
         // margin-left: $mb-05; // FIXME:
-        // transition: 0.3s;
+        transition: 0.3s;
     }
 
     &__icon {
@@ -117,5 +117,13 @@
         .button__icon {
             transform: translateX(0.25rem);
         }
+    }
+}
+
+// PORTFOLIO BUTTON
+
+.portfolio__button:hover {
+    .button_icon {
+        transform: translateX(0.25rem);
     }
 }

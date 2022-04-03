@@ -7,7 +7,7 @@ export const useData = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
     const [data] = useState(rowData);
-    const { intro, about, skills, qualification, service } = data;
+    const { intro, about, skills, qualification, service, portfolio } = data;
 
     // Icons:
     const icons = {
@@ -95,6 +95,7 @@ export const DataProvider = ({ children }) => {
                 skills,
                 qualification,
                 service,
+                portfolio,
                 icons,
                 buttons,
             }}

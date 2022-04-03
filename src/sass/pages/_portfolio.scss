@@ -1,0 +1,28 @@
+@use "../utils/" as *;
+
+.portfolio {
+    &__container {
+        overflow: initial;
+    }
+
+    &__content {
+        padding: 0 1.5rem;
+    }
+
+    &__img {
+        width: 265px;
+        border-radius: 0.5rem;
+        justify-self: center;
+    }
+
+    &__title {
+        font-size: $fs-h3;
+        margin-bottom: $mb-05;
+    }
+
+    &__description {
+        margin-bottom: $mb-075;
+    }
+
+    
+}
