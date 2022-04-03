@@ -7,13 +7,9 @@ export const useData = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
     const [data] = useState(rowData);
-
-    // Skills and Qualification:
-
-    const { intro, about, skills, qualification } = data;
+    const { intro, about, skills, qualification, service } = data;
 
     // Icons:
-
     const icons = {
         angle_down: solid("angle-down"),
         code: solid("code"),
@@ -23,7 +19,11 @@ export const DataProvider = ({ children }) => {
         mouse: solid("computer-mouse"),
         education: solid("graduation-cap"),
         work: solid("briefcase"),
-        cal: solid("calendar-days"),
+        cal: solid("calendar-week"),
+        grid: solid("table-columns"),
+        arrowRgt: solid("arrow-right"),
+        check_circle: solid("check-circle"),
+        close: solid("xmark"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),
@@ -31,7 +31,6 @@ export const DataProvider = ({ children }) => {
     };
 
     // Buttons:
-
     const buttons = {
         introBtn: {
             name: "Contact Me",
@@ -79,6 +78,11 @@ export const DataProvider = ({ children }) => {
                 icon: icons.work,
             },
         ],
+
+        serviceBtn: {
+            name: "View More",
+            icon: icons.arrowRgt,
+        },
     };
 
     /* ...................................................................... */
@@ -90,6 +94,7 @@ export const DataProvider = ({ children }) => {
                 about,
                 skills,
                 qualification,
+                service,
                 icons,
                 buttons,
             }}

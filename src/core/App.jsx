@@ -1,9 +1,9 @@
 import Header from "../components/Header";
 import About from "../pages/About";
 import Qualification from "../components/qualification/Qualification";
-
 import Skills from "../components/skills/Skills";
 import LandingPage from "../pages/LandingPage";
+import Service from "../components/service/Service";
 
 function App() {
     return (
@@ -13,6 +13,7 @@ function App() {
             <About />
             <Skills />
             <Qualification />
+            <Service />
         </div>
     );
 }

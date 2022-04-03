@@ -47,4 +47,19 @@ function QualificationBtn({ name, icon }) {
     );
 }
 
-export { QualificationBtn, MainBtn, SocialsBtn, ScrollDownBtn };
+function ServiceBtn({ props }) {
+    const { serviceBtn, handleModal } = props;
+    const { name, icon } = serviceBtn;
+
+    return (
+        <span
+            className="button button--flex button-small button-link services__button"
+            onClick={() => handleModal()}
+        >
+            {name}
+            <FontAwesomeIcon icon={icon} className="button__icon" />
+        </span>
+    );
+}
+
+export { QualificationBtn, MainBtn, SocialsBtn, ScrollDownBtn, ServiceBtn };
