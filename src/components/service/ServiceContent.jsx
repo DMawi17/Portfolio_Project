@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { ServiceBtn } from "../Buttons";
 import ServiceModal from "./ServiceModal";
+import { ServiceBtn } from "../Buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ServiceContent({ props }) {
@@ -17,7 +17,7 @@ function ServiceContent({ props }) {
             <FontAwesomeIcon icon={icons.grid} />
             <div>
                 <h3 className="services__title">
-                    UI/UX <br /> Designer
+                    Frontend <br /> Development
                 </h3>
             </div>
             <ServiceBtn props={{ serviceBtn, handleModal }} />
