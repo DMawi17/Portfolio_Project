@@ -1,13 +1,15 @@
 import React, { createContext, useState, useContext } from "react";
 import rowData from "../db.json";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
+import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const DataContext = createContext();
 export const useData = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
     const [data] = useState(rowData);
-    const { intro, about, skills, qualification, service, portfolio } = data;
+    const { intro, about, skills, qualification, service, portfolio, contact } =
+        data;
 
     // Icons:
     const icons = {
@@ -26,6 +28,9 @@ export const DataProvider = ({ children }) => {
         close: solid("xmark"),
         angleRgt: solid("angle-right"),
         angleLft: solid("angle-left"),
+        phone: solid("phone"),
+        envelope: solid("envelope"),
+        location: solid("location-dot"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),
@@ -85,6 +90,20 @@ export const DataProvider = ({ children }) => {
             name: "View More",
             icon: icons.arrowRgt,
         },
+
+        contactBtn: [
+            { title: "Call Me", address: "+49 15168541398", icon: icons.phone },
+            {
+                title: "Email",
+                address: "asegda17@gmail.com",
+                icon: icons.envelope,
+            },
+            {
+                title: "Address",
+                address: "70771 Leinfelden-Echterdingen",
+                icon: icons.location,
+            },
+        ],
     };
 
     /* ...................................................................... */
@@ -98,6 +117,7 @@ export const DataProvider = ({ children }) => {
                 qualification,
                 service,
                 portfolio,
+                contact,
                 icons,
                 buttons,
             }}

@@ -132,5 +132,12 @@
                 "img_url": "images/sound.png"
             }
         ]
+    },
+
+    "contact": {
+        "contact_title": {
+            "title": "Contact",
+            "subtitle": "Get in touch"
+        }
     }
 }
