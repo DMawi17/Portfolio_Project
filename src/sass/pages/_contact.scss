@@ -1,4 +1,51 @@
 @use "../utils/" as *;
 
 .contact {
+    &__container {
+        row-gap: 3rem;
+    }
+
+    &__information {
+        display: flex;
+        // margin-bottom: $mb-20;
+        align-items: center;
+    }
+
+    &__icon {
+        font-size: 2rem;
+        color: $clr-primary;
+        margin-right: $mb-075;
+    }
+
+    &__title {
+        font-size: $fs-h3;
+        font-weight: $fw-reg;
+    }
+
+    &__subtitle {
+        font-size: $fs-sm;
+        color: $clr-txt-light;
+    }
+
+    &__content {
+        background-color: $clr-input;
+        border-radius: 0.5rem;
+        padding: 0.75rem 1rem 0.25rem;
+    }
+
+    &__label {
+        font-size: $fs-sm;
+        color: $clr-title;
+    }
+
+    &__input {
+        width: 100%;
+        background-color: $clr-input;
+        color: $clr-txt;
+        font-family: $ff-primary;
+        font-size: $fs-body;
+        border: none;
+        outline: none;
+        padding: 0.25rem 0.5rem 0.5rem 0;
+    }
 }

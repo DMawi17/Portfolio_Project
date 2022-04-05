@@ -4,6 +4,7 @@ import Qualification from "../components/qualification/Qualification";
 import Skills from "../components/skills/Skills";
 import LandingPage from "../pages/LandingPage";
 import Portfolio from "../pages/Portfolio";
+import Contact from "../pages/Contact";
 // import Service from "../components/service/Service";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Qualification />
             {/* <Service /> */}
             <Portfolio />
+            <Contact />
         </div>
     );
 }
