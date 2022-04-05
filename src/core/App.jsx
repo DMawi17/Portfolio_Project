@@ -10,13 +10,13 @@ import Contact from "../pages/Contact";
 function App() {
     return (
         <div className="app">
-            {/* <Header />
+            <Header />
             <LandingPage />
             <About />
             <Skills />
             <Qualification />
             {/* <Service /> */}
-            {/* <Portfolio /> */}
+            <Portfolio />
             <Contact />
         </div>
     );
