@@ -1,4 +1,3 @@
-// import movie from "../../assets/images/movie.png";
 import { PortfolioBtn } from "../Buttons";
 
 function PortfolioContent({ props }) {

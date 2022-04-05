@@ -121,13 +121,13 @@
             },
             {
                 "title": "Admin Dashboard",
-                "description": "An admin dashboard site with adding, editing and deleting products and users",
+                "description": "An admin dashboard site with graph representation.",
                 "BtnName": "Demo",
                 "img_url": "images/admin.png"
             },
             {
                 "title": "Music Streaming Website",
-                "description": "A music streaming site to discover, listen and share music",
+                "description": "A music streaming site to listen and share music",
                 "BtnName": "Demo",
                 "img_url": "images/sound.png"
             }

@@ -3,6 +3,7 @@
 .portfolio {
     &__container {
         overflow: initial;
+        margin: 0.5rem;
     }
 
     &__content {
@@ -23,6 +24,4 @@
     &__description {
         margin-bottom: $mb-075;
     }
-
-    
 }

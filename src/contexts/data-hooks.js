@@ -24,6 +24,8 @@ export const DataProvider = ({ children }) => {
         arrowRgt: solid("arrow-right"),
         check_circle: solid("check-circle"),
         close: solid("xmark"),
+        angleRgt: solid("angle-right"),
+        angleLft: solid("angle-left"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),

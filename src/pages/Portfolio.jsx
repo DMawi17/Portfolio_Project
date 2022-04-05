@@ -1,12 +1,10 @@
 import { useData } from "../contexts/data-hooks";
 import MainTitle from "../components/titles/MainTitle";
-import PortfolioContent from "../components/projects/PortfolioContent";
-import { v4 } from "uuid";
+import PortfolioSlider from "../components/projects/PortfolioSlider";
 
 function Portfolio() {
     const { portfolio, icons } = useData();
-
-    const { portfolio_title, portfolio_content } = portfolio;
+    const { portfolio_title } = portfolio;
 
     return (
         <section className="portfolio section" id="portfolio">
@@ -14,12 +12,7 @@ function Portfolio() {
 
             <div className="portfolio__container container">
                 <div>
-                    {portfolio_content.map((content) => (
-                        <PortfolioContent
-                            key={v4()}
-                            props={{ content, icons }}
-                        />
-                    ))}
+                    <PortfolioSlider props={{ portfolio, icons }} />
                 </div>
             </div>
         </section>
