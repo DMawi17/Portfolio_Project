@@ -16,9 +16,9 @@
 @use "components/skills";
 @use "components/qualification";
 @use "components/service";
+@use "components/portfolioSlider";
 
 /* CORE */
-
 @use "./App.scss";
 @use "pages/Home";
 
@@ -28,7 +28,7 @@
 @use "pages/contact";
 @use "pages/error404";
 @use "pages/landing_page";
-// @use "pages/portfolio";
+@use "pages/portfolio";
 
 // @use "vendors/bootstrap";
 // @use "vendors/mui";

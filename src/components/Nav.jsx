@@ -61,14 +61,14 @@ function Navigation() {
                             </Link>
                         </li>
                         <li className="nav_item">
-                            <Link to="/portfolio" className="nav__link">
+                            <a href="#portfolio" className="nav__link">
                                 <FontAwesomeIcon
                                     icon={solid("image")}
                                     // className="uil uil-scenery"
                                     className="nav__icon"
                                 />{" "}
                                 Portfolio
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav_item">
                             <Link to="/portfolio" className="nav__link">

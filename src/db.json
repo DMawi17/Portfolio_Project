@@ -104,5 +104,33 @@
             "I create ux element interactions.",
             "I position you company brand"
         ]
+    },
+
+    "portfolio": {
+        "portfolio_title": {
+            "title": "Portfolio",
+            "subtitle": "Most recent work"
+        },
+
+        "portfolio_content": [
+            {
+                "title": "Movie Website",
+                "description": "A website influenced by Netflix with animated interaction.",
+                "BtnName": "Demo",
+                "img_url": "images/movie.png"
+            },
+            {
+                "title": "Admin Dashboard",
+                "description": "An admin dashboard site with graph representation.",
+                "BtnName": "Demo",
+                "img_url": "images/admin.png"
+            },
+            {
+                "title": "Music Streaming Website",
+                "description": "A music streaming site to listen and share music",
+                "BtnName": "Demo",
+                "img_url": "images/sound.png"
+            }
+        ]
     }
 }

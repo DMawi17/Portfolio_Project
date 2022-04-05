@@ -1,22 +1,22 @@
-// import Skills from "../components/skills/SkillContent";
-// import data from "../db.json";
-// import { v4 } from "uuid";
-// import MainTitle from "../components/titles/MainTitle";
+import { useData } from "../contexts/data-hooks";
+import MainTitle from "../components/titles/MainTitle";
+import PortfolioSlider from "../components/projects/PortfolioSlider";
 
-// function Portfolio() {
-//     return (
-//         <section className="skills section" id="skills">
-//             <MainTitle {...titleValues} />
+function Portfolio() {
+    const { portfolio, icons } = useData();
+    const { portfolio_title } = portfolio;
 
-//             <div className="skills__container container grid">
-//                 <div>
-//                     {data.skills.map((skill) => (
-//                         <Skills key={v4()} skills={skill} />
-//                     ))}
-//                 </div>
-//             </div>
-//         </section>
-//     );
-// }
+    return (
+        <section className="portfolio section" id="portfolio">
+            <MainTitle {...portfolio_title} />
 
-// export default Portfolio;
+            <div className="portfolio__container container">
+                <div>
+                    <PortfolioSlider props={{ portfolio, icons }} />
+                </div>
+            </div>
+        </section>
+    );
+}
+
+export default Portfolio;

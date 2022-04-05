@@ -61,4 +61,25 @@ function ServiceBtn({ props }) {
     );
 }
 
-export { QualificationBtn, MainBtn, SocialsBtn, ScrollDownBtn, ServiceBtn };
+function PortfolioBtn({ props }) {
+    const { icons, content } = props;
+
+    return (
+        <a
+            href="/"
+            className="button button--flex button-small portfolio__button"
+        >
+            {content.BtnName}
+            <FontAwesomeIcon icon={icons.arrowRgt} className="button_icon" />
+        </a>
+    );
+}
+
+export {
+    QualificationBtn,
+    MainBtn,
+    SocialsBtn,
+    ScrollDownBtn,
+    ServiceBtn,
+    PortfolioBtn,
+};

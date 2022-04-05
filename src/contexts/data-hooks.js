@@ -7,7 +7,7 @@ export const useData = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
     const [data] = useState(rowData);
-    const { intro, about, skills, qualification, service } = data;
+    const { intro, about, skills, qualification, service, portfolio } = data;
 
     // Icons:
     const icons = {
@@ -24,6 +24,8 @@ export const DataProvider = ({ children }) => {
         arrowRgt: solid("arrow-right"),
         check_circle: solid("check-circle"),
         close: solid("xmark"),
+        angleRgt: solid("angle-right"),
+        angleLft: solid("angle-left"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),
@@ -95,6 +97,7 @@ export const DataProvider = ({ children }) => {
                 skills,
                 qualification,
                 service,
+                portfolio,
                 icons,
                 buttons,
             }}
