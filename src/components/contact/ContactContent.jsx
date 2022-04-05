@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function ContactContent({ title, address, icon }) {
     return (
-        <div className="contact_information">
+        <div className="contact__information">
             <FontAwesomeIcon icon={icon} className="contact__icon" />
 
             <div>

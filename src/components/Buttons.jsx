@@ -75,12 +75,6 @@ function PortfolioBtn({ props }) {
     );
 }
 
-// function ContactBtn({ props }) {
-//     const { icons } = props;
-
-//     return <FontAwesomeIcon icon={icons.contact} className="contact__icon" />;
-// }
-
 export {
     QualificationBtn,
     MainBtn,
@@ -88,5 +82,4 @@ export {
     ScrollDownBtn,
     ServiceBtn,
     PortfolioBtn,
-    // ContactBtn,
 };
