@@ -127,3 +127,29 @@
         transform: translateX(0.25rem);
     }
 }
+
+// SCROLL UP BUTTON
+.scrollUp {
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    background-color: $clr-primary;
+    opacity: 0.8;
+    padding: .3rem 0.5rem 0.1rem;
+    border-radius: 0.3rem;
+    z-index: $z-tooltip;
+    transition: 0.4s;
+
+    &:hover {
+        background-color: $clr-tertiary;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}
+
+// .scrollInvisible {
+//     opacity: 100;
+// }

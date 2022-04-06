@@ -5,6 +5,8 @@ import Skills from "../components/skills/Skills";
 import LandingPage from "../pages/LandingPage";
 import Portfolio from "../pages/Portfolio";
 import Contact from "../pages/Contact";
+import Footer from "../components/Footer";
+import { ScrollUpBtn } from "../components/Buttons";
 // import Service from "../components/service/Service";
 
 function App() {
@@ -14,10 +16,12 @@ function App() {
             <LandingPage />
             <About />
             <Skills />
-            <Qualification />
             {/* <Service /> */}
+            <Qualification />
             <Portfolio />
             <Contact />
+            <Footer />
+            <ScrollUpBtn />
         </div>
     );
 }

@@ -8,8 +8,16 @@ export const useData = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
     const [data] = useState(rowData);
-    const { intro, about, skills, qualification, service, portfolio, contact } =
-        data;
+    const {
+        intro,
+        about,
+        skills,
+        qualification,
+        service,
+        portfolio,
+        contact,
+        footer,
+    } = data;
 
     // Icons:
     const icons = {
@@ -31,6 +39,7 @@ export const DataProvider = ({ children }) => {
         phone: solid("phone"),
         envelope: solid("envelope"),
         location: solid("location-dot"),
+        scrollUp: solid("arrow-up"),
 
         fabLinkedIn: brands("linkedin-in"),
         fabGithub: brands("github-alt"),
@@ -118,6 +127,7 @@ export const DataProvider = ({ children }) => {
                 service,
                 portfolio,
                 contact,
+                footer,
                 icons,
                 buttons,
             }}
