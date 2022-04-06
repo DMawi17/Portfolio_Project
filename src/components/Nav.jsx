@@ -51,14 +51,14 @@ function Navigation() {
                             </a>
                         </li>
                         <li className="nav_item">
-                            <Link to="/service" className="nav__link">
+                            <a href="#service" className="nav__link">
                                 <FontAwesomeIcon
                                     icon={solid("briefcase")}
                                     // className="uil uil-briefcase-alt"
                                     className="nav__icon"
                                 />{" "}
                                 Service
-                            </Link>
+                            </a>
                         </li>
                         <li className="nav_item">
                             <a href="#portfolio" className="nav__link">
@@ -71,14 +71,14 @@ function Navigation() {
                             </a>
                         </li>
                         <li className="nav_item">
-                            <Link to="/portfolio" className="nav__link">
+                            <a href="#contact" className="nav__link">
                                 <FontAwesomeIcon
                                     icon={solid("paper-plane")}
                                     // className="uil uil-message"
                                     className="nav__icon"
                                 />{" "}
-                                Contact me
-                            </Link>
+                                Contact
+                            </a>
                         </li>
                     </ul>
                     <FontAwesomeIcon

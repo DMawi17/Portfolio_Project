@@ -1,4 +1,6 @@
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 function SocialsBtn({ url, icon }) {
     return (
@@ -75,6 +77,60 @@ function PortfolioBtn({ props }) {
     );
 }
 
+function SocialsFooterBtn({ url, icon }) {
+    return (
+        <a
+            href={url}
+            target="_blank"
+            className="footer__social"
+            rel="noreferrer"
+        >
+            <FontAwesomeIcon icon={icon} />
+        </a>
+    );
+}
+
+function ScrollUpBtn() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", toggleVisibility);
+    }, []);
+
+    function toggleVisibility() {
+        if (window.scrollY >= 560) {
+            setIsVisible(true);
+        } else {
+            setIsVisible(false);
+        }
+    }
+
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+
+    return (
+        <div>
+            {isVisible && (
+                <div
+                    role="button"
+                    className="scrollUp"
+                    id="scroll-up"
+                    onClick={scrollToTop}
+                >
+                    <FontAwesomeIcon
+                        icon={solid("arrow-up")}
+                        className="scrollUp__icon"
+                    />
+                </div>
+            )}
+        </div>
+    );
+}
+
 export {
     QualificationBtn,
     MainBtn,
@@ -82,4 +138,6 @@ export {
     ScrollDownBtn,
     ServiceBtn,
     PortfolioBtn,
+    SocialsFooterBtn,
+    ScrollUpBtn,
 };

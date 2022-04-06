@@ -139,5 +139,7 @@
             "title": "Contact",
             "subtitle": "Get in touch"
         }
-    }
+    },
+
+    "footer": ["about", "portfolio", "contact"]
 }
