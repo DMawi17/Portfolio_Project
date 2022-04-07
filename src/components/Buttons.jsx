@@ -26,17 +26,19 @@ function MainBtn({ name, icon }) {
 
 function ScrollDownBtn({ name, icons }) {
     return (
-        <a href="/" className="home__scroll-button button-flex">
-            <FontAwesomeIcon
-                icon={icons.mouse}
-                className="home__scroll-mouse"
-            />{" "}
-            <span className="home__scroll-name">{name}</span>{" "}
-            <FontAwesomeIcon
-                icon={icons.arrowDwn}
-                className="home__scroll-arrow"
-            />
-        </a>
+        <div className="home__scroll">
+            <a href="#about" className="home__scroll-button button-flex">
+                <FontAwesomeIcon
+                    icon={icons.mouse}
+                    className="home__scroll-mouse"
+                />{" "}
+                <span className="home__scroll-name">{name}</span>{" "}
+                <FontAwesomeIcon
+                    icon={icons.arrowDwn}
+                    className="home__scroll-arrow"
+                />
+            </a>
+        </div>
     );
 }
 

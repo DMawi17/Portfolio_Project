@@ -1,5 +1,5 @@
 import { useData } from "../contexts/data-hooks";
-import { SocialsFooterBtn } from "./Buttons";
+import { SocialsFooterBtn } from "../components/Buttons";
 import { v4 } from "uuid";
 
 function Footer() {

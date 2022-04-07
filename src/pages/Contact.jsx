@@ -15,9 +15,11 @@ function Contact() {
             <MainTitle {...contact_title} />
 
             <div className="contact__container container grid">
-                {contactBtn.map((content) => (
-                    <ContactContent key={v4()} {...content} />
-                ))}
+                <div>
+                    {contactBtn.map((content) => (
+                        <ContactContent key={v4()} {...content} />
+                    ))}
+                </div>
 
                 <Form {...icons} />
             </div>
