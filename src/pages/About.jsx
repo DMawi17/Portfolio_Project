@@ -8,6 +8,8 @@ import { v4 } from "uuid";
 function About() {
     const { buttons, about } = useData();
 
+
+
     const { about_title, about_description, about_content } = about;
     const { aboutBtn } = buttons;
     const arrContent = Object.values(about_content);

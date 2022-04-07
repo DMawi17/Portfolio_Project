@@ -1,3 +1,4 @@
+import { ThemeProvider } from "./contexts/theme";
 import { DataProvider } from "./contexts/data-hooks";
 import { render } from "react-dom";
 import { BrowserRouter } from "react-router-dom";
@@ -7,10 +8,12 @@ import "./sass/styles.scss";
 const rootElement = document.getElementById("root");
 
 render(
-    <DataProvider>
-        <BrowserRouter>
-            <App />
-        </BrowserRouter>
-    </DataProvider>,
+    <ThemeProvider>
+        <DataProvider>
+            <BrowserRouter>
+                <App />
+            </BrowserRouter>
+        </DataProvider>
+    </ThemeProvider>,
     rootElement
 );

@@ -1,7 +1,6 @@
 import React, { createContext, useState, useContext } from "react";
 import rowData from "../db.json";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
-import { icon } from "@fortawesome/fontawesome-svg-core";
 
 const DataContext = createContext();
 export const useData = () => useContext(DataContext);

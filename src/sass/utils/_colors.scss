@@ -1,25 +1,46 @@
 /* CSS HEX */
-$clr-light: #fff;
-$clr-med: #aaa;
-$clr-dark: #303030;
 
 $clr-hue: 270;
 
 $clr-primary: hsl($clr-hue, 69%, 61%);
-$clr-secondary: hsl($clr-hue, 69%, 61%);
+// $clr-secondary: hsl($clr-hue, 69%, 61%);
 $clr-tertiary: hsl($clr-hue, 57%, 53%);
 $clr-primary-light: hsl($clr-hue, 92%, 85%);
-$clr-title: hsl($clr-hue, 8%, 15%);
-$clr-txt: hsl($clr-hue, 8%, 45%);
+// $clr-title: hsl($clr-hue, 8%, 15%);
+// $clr-txt: hsl($clr-hue, 8%, 45%);
 $clr-txt-light: hsl($clr-hue, 8%, 65%);
-$clr-input: hsl($clr-hue, 70%, 96%);
-$clr-body: hsl($clr-hue, 60%, 99%);
-$clr-container: $clr-light;
+// $clr-input: hsl($clr-hue, 70%, 96%);
+// $clr-body: hsl($clr-hue, 60%, 99%);
+// $clr-container: #fff;
 
-:export {
-    clrPrimary: $clr-primary;
-    clrTertiary: $clr-tertiary;
-}
+/* Dark theme */
+
+$clr-secondary: hsl($clr-hue, 30%, 8%);
+$clr-title: hsl($clr-hue, 8%, 95%);
+$clr-txt: hsl($clr-hue, 8%, 75%);
+$clr-input: hsl($clr-hue, 29%, 16%);
+$clr-body: hsl($clr-hue, 28%, 12%);
+$clr-container: hsl($clr-hue, 29%, 16%);
+
+// :export {
+// lightClrPrimary: $clr-primary;
+//     lightClrSecondary: $clr-secondary;
+//     lightClrTertiary: $clr-tertiary;
+//     lightClrPrimaryLight: $clr-primary-light;
+//     lightClrTitle: $clr-title;
+//     lightClrTxt: $clr-txt;
+//     lightClrTxtLight: $clr-txt-light;
+//     lightClrInput: $clr-input;
+//     lightClrBody: $clr-body;
+//     lightClrContainer: #fff;
+
+//     darkClrSecondary: $dark-clr-secondary;
+//     darkClrTitle: $dark-clr-title;
+//     darkClrTxt: $dark-clr-txt;
+//     darkClrInput: $dark-clr-input;
+//     darkClrBody: $dark-clr-body;
+//     darkClrContainer: $dark-clr-container;
+// }
 
 // /* SCSS HEX */
 // $maximum-yellow-red: #f6b345ff;
