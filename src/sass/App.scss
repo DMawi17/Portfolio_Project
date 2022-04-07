@@ -11,7 +11,7 @@ body {
     margin: 0 0 $header-height 0;
     font-family: $ff-primary;
     font-size: $fs-body;
-    background-color: $clr-light;
+    background-color: $clr-body;
     color: $clr-txt;
 }
 
@@ -65,3 +65,4 @@ img {
     display: grid;
     gap: 1.5rem;
 }
+

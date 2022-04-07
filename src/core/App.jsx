@@ -8,10 +8,15 @@ import Contact from "../pages/Contact";
 import Footer from "../components/Footer";
 import { ScrollUpBtn } from "../components/Buttons";
 // import Service from "../components/service/Service";
+import { useTheme } from "../contexts/theme";
 
 function App() {
+    const { theme, isDark } = useTheme();
+    console.log(isDark);
+
     return (
-        <div className="app">
+        <div className="dark-theme">
+            {/* className="app"> */}
             <Header />
             <LandingPage />
             <About />
