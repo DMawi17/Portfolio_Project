@@ -66,3 +66,18 @@ img {
     gap: 1.5rem;
 }
 
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: $clr-scroll-bar;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $clr-scroll-thumb;
+    border-radius: 0.5rem;
+
+    &:hover {
+        background-color: $clr-txt-light;
+    }
+}
