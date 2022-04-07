@@ -6,24 +6,22 @@ import colors from "../sass/utils/_colors.scss";
 
 import { useData } from "../contexts/data-hooks";
 
-function LandingPage() {
+function Home() {
     const { buttons } = useData();
     const { scrollDwnBtn } = buttons;
 
     return (
-        <section className="section home" id="home">
+        <section className="home section" id="home">
             <div className="home__container container grid">
                 <div className="home__content grid">
                     <Socials />
                     <Blob fill={colors.clrPrimary} />
                     <Intro />
-                    <div className="home__scroll">
-                        <ScrollDownBtn {...scrollDwnBtn} />
-                    </div>
                 </div>
+                <ScrollDownBtn {...scrollDwnBtn} />
             </div>
         </section>
     );
 }
 
-export default LandingPage;
+export default Home;

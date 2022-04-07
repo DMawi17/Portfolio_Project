@@ -12,11 +12,9 @@ function Skills() {
             <MainTitle {...skill_title} />
 
             <div className="skills__container container grid">
-                <div>
-                    {skill_content.map((skill) => (
-                        <SkillContent key={v4()} {...skill} />
-                    ))}
-                </div>
+                {skill_content.map((skill) => (
+                    <SkillContent key={v4()} {...skill} />
+                ))}
             </div>
         </section>
     );

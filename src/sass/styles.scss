@@ -1,6 +1,10 @@
 // @use "base/reset";
 // @use "base/typography";
 
+/* CORE */
+@use "./App.scss";
+@use "pages/Home";
+
 /* LAYOUTS */
 @use "layouts/footer";
 @use "layouts/header";
@@ -18,17 +22,18 @@
 @use "components/portfolioSlider";
 @use "components/darkMode";
 
-/* CORE */
-@use "./App.scss";
-@use "pages/Home";
-
 /* PAGES */
 
 @use "pages/about";
 @use "pages/contact";
 @use "pages/error404";
-@use "pages/landing_page";
+@use "pages/home";
 @use "pages/portfolio";
+
+/* MEDIA QUERIES */
+@use "media-queries/small";
+@use "media-queries/medium";
+@use "media-queries/large";
 
 // @use "vendors/bootstrap";
 // @use "vendors/mui";

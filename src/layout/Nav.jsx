@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
-import DarkMode from "./DarkMode";
+import DarkMode from "../components/DarkMode";
 
 function Navigation() {
     const [toggleOn, setToggleOn] = useState(false);
@@ -51,7 +51,7 @@ function Navigation() {
                                 Skills
                             </a>
                         </li>
-                        <li className="nav_item">
+                        {/* <li className="nav_item">
                             <a href="#service" className="nav__link">
                                 <FontAwesomeIcon
                                     icon={solid("briefcase")}
@@ -60,7 +60,7 @@ function Navigation() {
                                 />{" "}
                                 Service
                             </a>
-                        </li>
+                        </li> */}
                         <li className="nav_item">
                             <a href="#portfolio" className="nav__link">
                                 <FontAwesomeIcon
