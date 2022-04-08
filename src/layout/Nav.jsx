@@ -14,9 +14,9 @@ function Navigation() {
 
     return (
         <div className="nav container">
-            <Link to="/" className="nav__logo">
+            <a href="#home" className="nav__logo">
                 DMawi
-            </Link>
+            </a>
             {toggleOn && (
                 <div className="nav__menu" id="nav_menu">
                     <ul className="nav__list grid" onClick={handleToggle}>

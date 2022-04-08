@@ -75,18 +75,22 @@
         color: $clr-primary;
         transition: 0.3s;
     }
+
     &-button:hover {
         transform: translateY(0.25rem);
     }
+
     &-mouse {
         font-size: 2rem;
     }
+
     &-name {
         font-size: $fs-sm;
         color: $clr-title;
         font-weight: $fw-reg;
-        margin-right: $mb-025;
+        margin: 0 $mb-025 0;
     }
+
     &-arrow {
         font-size: 1.25rem;
     }
