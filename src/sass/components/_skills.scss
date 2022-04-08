@@ -7,6 +7,7 @@
 .skills__header {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     margin-bottom: $mb-25;
 }
 
@@ -20,9 +21,9 @@
     cursor: pointer;
 }
 
-.skills__icon {
-    margin-right: $mb-075;
-}
+// .skills__icon {
+//     margin-right: $mb-075;
+// }
 
 .skills__title {
     font-style: $fs-h3;
@@ -36,6 +37,9 @@
 .skills__list {
     row-gap: 1.5rem;
     padding-left: 3.3rem;
+    height: max-content;
+    width: 90%;
+    margin-bottom: $mb-25;
 }
 
 .skills__title {
@@ -80,9 +84,4 @@
 .skills__nodejs,
 .skills__firebase {
     width: 60%;
-}
-
-.skills__list {
-    height: max-content;
-    margin-bottom: $mb-25;
 }
