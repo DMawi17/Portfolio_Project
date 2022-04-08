@@ -2,8 +2,8 @@
 
 @media (max-width: 350px) {
     .container {
-    margin-left: $mb-10;
-    margin-right: $mb-10;
+        margin-left: $mb-10;
+        margin-right: $mb-10;
     }
 
     .nav {
@@ -23,6 +23,10 @@
 
         &__blob {
             width: 180px;
+        }
+
+        &__img {
+            justify-self: center;
         }
     }
 
@@ -50,5 +54,3 @@
     //     //..
     // }
 }
-
-
