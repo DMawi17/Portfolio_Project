@@ -11,7 +11,7 @@ function QualificationList({ props }) {
                 {place} - {company}
             </span>
             <div className="qualification__calendar">
-                <FontAwesomeIcon icon={cal} />
+                <FontAwesomeIcon icon={cal} className="cal__icon" />
                 {time}
             </div>
         </div>
