@@ -13,7 +13,24 @@
         }
 
         &__social {
-            transform: translateX(-6rem);
+            transform: translateX(85vw) translateY(35vh);
+
+            &__rounder {
+                display: inline-block;
+                width: 13px;
+                height: 13px;
+                background-color: $clr-primary;
+                border-radius: 50%;
+                opacity: 0;
+            }
+
+            &__line {
+                display: block;
+                width: 1px;
+                height: 100%;
+                background-color: $clr-primary;
+                transform: translate(0.5rem, -0.5rem);
+            }
         }
     }
 

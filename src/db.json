@@ -40,7 +40,8 @@
                     { "title": "HTML", "data": "90%" },
                     { "title": "CSS", "data": "80%" },
                     { "title": "JavaScript", "data": "60%" },
-                    { "title": "React", "data": "70%" }
+                    { "title": "React", "data": "70%" },
+                    { "title": "Redux", "data": "65%" }
                 ]
             },
 
@@ -53,7 +54,8 @@
                 "skill_list": [
                     { "title": "NodeJs", "data": "60%" },
                     { "title": "Express", "data": "70%" },
-                    { "title": "Firebase", "data": "60%" }
+                    { "title": "MongoDB", "data": "65%" },
+                    { "title": "Firebase", "data": "50%" }
                 ]
             }
         ]
