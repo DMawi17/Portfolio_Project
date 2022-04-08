@@ -53,4 +53,38 @@
     //     }
     //     //..
     // }
+    // .mySwiper {
+    //     padding: 0;
+    // }
+
+    // .swiper {
+    //     &-button {
+    //         &-prev {
+    //             left: 0.15rem;
+    //         }
+    //         &-next {
+    //             right: 0.15rem;
+    //         }
+
+    //         &-prev,
+    //         &-next {
+    //             color: $clr-primary;
+    //             top: 26%;
+
+    //             &::after,
+    //             &::after {
+    //                 font-size: 1.5rem;
+    //                 border-radius: 1px solid red;
+    //             }
+    //         }
+    //     }
+
+    //     &-horizontal > &-pagination-bullets {
+    //         bottom: 0;
+    //     }
+
+    //     &-pagination-bullet-active {
+    //         background-color: $clr-primary;
+    //     }
+    // }
 }
