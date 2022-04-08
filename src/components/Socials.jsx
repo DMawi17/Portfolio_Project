@@ -9,14 +9,14 @@ function Socials() {
     return (
         <div className="home__social">
             <div>
-                <span className="home__social__line"></span>
-                <span className="home__social__line"></span>
                 <span className="home__social__rounder"></span>
+                <span className="home__social__line"></span>
             </div>
             {socialBtn.map((social) => (
                 <SocialsBtn key={v4()} {...social} />
             ))}
             <div>
+                <span className="home__social__line"></span>
                 <span className="home__social__line"></span>
                 <span className="home__social__rounder"></span>
             </div>
