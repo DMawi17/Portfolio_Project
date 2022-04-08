@@ -91,7 +91,7 @@
     }
 
     .home {
-        height: 100vh; // TODO:
+        height: 100vh;
 
         &__container {
             row-gap: 5rem;
@@ -108,8 +108,8 @@
 
         &__scroll {
             display: block;
-            position: absolute; // TODO:
-            bottom: 1rem; // TODO:
+            position: absolute;
+            bottom: 1rem;
 
             &-button {
                 margin-left: 3rem;
@@ -118,9 +118,7 @@
     }
 
     .about {
-        padding-top: 4rem; // TODO:
-
-        &__container {
+        padding-top &__container {
             column-gap: 5rem;
         }
 
