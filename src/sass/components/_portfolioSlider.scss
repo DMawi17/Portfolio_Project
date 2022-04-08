@@ -15,11 +15,6 @@
             top: 22.5vh;
             border-radius: 0.25rem;
             transition: 0.3s;
-            background: $clr-bg-light-transparent;
-
-            &:hover {
-                background: $clr-bg-light;
-            }
 
             &::after,
             &::after {
