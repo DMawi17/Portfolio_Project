@@ -91,14 +91,13 @@
     }
 
     .home {
+        height: 100vh; // TODO:
+
         &__container {
             row-gap: 5rem;
         }
 
         &__content {
-            * {
-                // outline: 2px solid red;
-            }
             padding-top: 5.5rem;
             column-gap: 2rem;
         }
@@ -109,6 +108,8 @@
 
         &__scroll {
             display: block;
+            position: absolute; // TODO:
+            bottom: 1rem; // TODO:
 
             &-button {
                 margin-left: 3rem;
@@ -117,6 +118,8 @@
     }
 
     .about {
+        padding-top: 4rem; // TODO:
+
         &__container {
             column-gap: 5rem;
         }
