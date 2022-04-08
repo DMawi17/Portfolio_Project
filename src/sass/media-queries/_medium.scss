@@ -23,6 +23,12 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .skills__icon,
+    .skills__arrow {
+        font-size: 2rem;
+        color: $clr-primary;
+    }
+
     .qualification__section {
         display: grid;
         grid-template-columns: 0.6fr;
