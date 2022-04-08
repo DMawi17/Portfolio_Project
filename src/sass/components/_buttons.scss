@@ -58,6 +58,15 @@
     }
 }
 
+.intro__button,
+.form__button {
+    &:hover {
+        .button__icon {
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+    }
+}
+
 // SCROLL BUTTON
 .home__scroll {
     display: none;
@@ -87,6 +96,12 @@
 .about__button {
     display: flex;
     justify-content: center;
+
+    &:hover {
+        .button__icon {
+            transform: translateY(0.25rem);
+        }
+    }
 }
 
 // SKILL BUTTON
@@ -110,8 +125,6 @@
 .services__button {
     cursor: pointer;
     font-style: $fs-sm;
-    display: flex;
-    align-items: center;
 
     &:hover {
         .button__icon {
@@ -121,10 +134,13 @@
 }
 
 // PORTFOLIO BUTTON
+.portfolio__button {
+    margin: $mb-10 0 $mb-20;
 
-.portfolio__button:hover {
-    .button_icon {
-        transform: translateX(0.25rem);
+    &:hover {
+        .button__icon {
+            transform: translateX(0.25rem);
+        }
     }
 }
 

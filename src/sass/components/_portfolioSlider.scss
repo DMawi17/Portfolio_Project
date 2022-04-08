@@ -1,5 +1,12 @@
 @use "../utils/" as *;
 
+.swiper-wrapper {
+    // padding: 2rem;
+}
+
+.mySwiper {
+    // padding: 10px;
+}
 .swiper {
     &-button {
         &-prev {
@@ -12,8 +19,9 @@
         &-prev,
         &-next {
             color: $clr-primary;
-            top: 26.5%;
+            top: 22.5%;
             border-radius: 0.25rem;
+            transition: 0.3s;
             background: $clr-bg-light-transparent;
 
             &:hover {
