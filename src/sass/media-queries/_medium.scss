@@ -139,7 +139,7 @@
 
     .qualification {
         &__tabs {
-            justify-content: center;
+            justify-content: space-around;
         }
 
         &__button {
@@ -154,12 +154,48 @@
     .portfolio {
         &_img {
             width: 320px;
+            position: relative;
         }
 
         &__content {
             align-items: center;
         }
     }
+
+    .mySwiper {
+        padding: 2.5rem;
+    }
+
+    // .swiper {
+    //     &-button {
+    //         &-prev {
+    //             left: 0.15rem;
+    //         }
+    //         &-next {
+    //             right: 0.15rem;
+    //         }
+
+    //         &-prev,
+    //         &-next {
+    //             color: $clr-primary;
+    //             top: 26%;
+
+    //             &::after,
+    //             &::after {
+    //                 font-size: 1.5rem;
+    //                 border-radius: 1px solid red;
+    //             }
+    //         }
+    //     }
+
+    //     &-horizontal > &-pagination-bullets {
+    //         bottom: 0;
+    //     }
+
+    //     &-pagination-bullet-active {
+    //         background-color: $clr-primary;
+    //     }
+    // }
 
     .footer {
         &__container {

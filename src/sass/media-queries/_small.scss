@@ -24,10 +24,6 @@
         &__blob {
             width: 180px;
         }
-
-        &__img {
-            justify-self: center;
-        }
     }
 
     .skills__title {
@@ -57,38 +53,16 @@
     //     }
     //     //..
     // }
-    // .mySwiper {
-    //     padding: 0;
-    // }
+}
 
-    // .swiper {
-    //     &-button {
-    //         &-prev {
-    //             left: 0.15rem;
-    //         }
-    //         &-next {
-    //             right: 0.15rem;
-    //         }
+@media (max-width: 568px) {
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 16vh;
+        background: $clr-bg-light-transparent;
 
-    //         &-prev,
-    //         &-next {
-    //             color: $clr-primary;
-    //             top: 26%;
-
-    //             &::after,
-    //             &::after {
-    //                 font-size: 1.5rem;
-    //                 border-radius: 1px solid red;
-    //             }
-    //         }
-    //     }
-
-    //     &-horizontal > &-pagination-bullets {
-    //         bottom: 0;
-    //     }
-
-    //     &-pagination-bullet-active {
-    //         background-color: $clr-primary;
-    //     }
-    // }
+        &:hover {
+            background: $clr-bg-light;
+        }
+    }
 }
