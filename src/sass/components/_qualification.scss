@@ -3,7 +3,7 @@
 .qualification {
     &__tabs {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
         margin-bottom: $mb-20;
     }
 
@@ -43,5 +43,9 @@
         height: 100%;
         background-color: $clr-primary;
         transform: translate(6px, -7px);
+    }
+
+    .cal__icon {
+        margin-right: $mb-025;
     }
 }

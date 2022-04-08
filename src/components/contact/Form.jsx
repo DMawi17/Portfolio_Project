@@ -39,11 +39,11 @@ function Form({ paperPlane }) {
                 ></textarea>
             </div>
             <div>
-                <a href="#" className="button button--flex">
+                <a href="/" className="button button-flex form__button">
                     Send Message
                     <FontAwesomeIcon
                         icon={paperPlane}
-                        className="button-icon"
+                        className="button__icon"
                     />
                 </a>
             </div>

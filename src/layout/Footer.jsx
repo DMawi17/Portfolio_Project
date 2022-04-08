@@ -10,7 +10,7 @@ function Footer() {
         <footer className="footer">
             <div className="footer__bg">
                 <div className="footer__container container grid">
-                <div>
+                    <div>
                         <h1 className="footer__title">Mawi</h1>
                         <span className="footer__subtitle">Web Developer</span>
                     </div>
@@ -36,7 +36,7 @@ function Footer() {
                 </div>
 
                 <p className="footer__copy">
-                    &#169; DMawi17. All right reserved
+                    &#169; Dagmawi Asegid All Right Reserved
                 </p>
             </div>
         </footer>

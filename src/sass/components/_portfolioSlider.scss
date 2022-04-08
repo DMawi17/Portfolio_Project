@@ -1,86 +1,45 @@
 @use "../utils/" as *;
 
-// #app {
-//     height: 100%;
-// }
-// html,
-// body {
-//     position: relative;
-//     height: 100%;
-// }
-
-// body {
-//     background: #eee;
-//     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-//     font-size: 14px;
-//     color: #000;
-//     margin: 0;
-//     padding: 0;
-// }
-
-// .swiper {
-//     width: 100%;
-//     height: 100%;
-// }
-
-// .swiper-slide {
-//     text-align: center;
-//     font-size: 18px;
-//     background: #fff;
-
-//     /* Center slide text vertically */
-//     display: -webkit-box;
-//     display: -ms-flexbox;
-//     display: -webkit-flex;
-//     display: flex;
-//     -webkit-box-pack: center;
-//     -ms-flex-pack: center;
-//     -webkit-justify-content: center;
-//     justify-content: center;
-//     -webkit-box-align: center;
-//     -ms-flex-align: center;
-//     -webkit-align-items: center;
-//     align-items: center;
-// }
-
-// .swiper-slide img {
-//     display: block;
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-// }
+.swiper-wrapper {
+    // padding: 2rem;
+}
 
 .mySwiper {
-    padding: 1.5rem;
+    // padding: 10px;
 }
-.swiper-button-prev::after,
-.swiper-button-next::after {
-    font-size: 1.5rem;
-}
+.swiper {
+    &-button {
+        &-prev {
+            left: 0.15rem;
+        }
+        &-next {
+            right: 0.15rem;
+        }
 
-.swiper-button-prev,
-.swiper-button-next {
-    color: $clr-primary;
-}
+        &-prev,
+        &-next {
+            color: $clr-primary;
+            top: 22.5%;
+            border-radius: 0.25rem;
+            transition: 0.3s;
+            background: $clr-bg-light-transparent;
 
-.swiper-button-prev {
-    left: -0.35rem;
-}
+            &:hover {
+                background: $clr-bg-light;
+            }
 
-.swiper-button-next {
-    right: -0.35rem;
-}
+            &::after,
+            &::after {
+                font-size: 1.5rem;
+            }
+        }
+    }
 
-.swiper-horizontal > .swiper-pagination-bullets {
-    bottom: 0;
-}
+    &-horizontal > &-pagination-bullets {
+        bottom: 0;
+    }
 
-.swiper-pagination-bullet-active {
-    background-color: $clr-primary;
-}
-
-.swiper-button-prev,
-.swiper-button-next,
-.swiper-pagination-bullet {
-    outline: red;
+    &-pagination-bullet-active {
+        background-color: $clr-primary;
+    }
 }

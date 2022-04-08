@@ -93,13 +93,16 @@ function Navigation() {
 
             <div className="nav__btn">
                 <DarkMode />
-                
+
                 <div
                     className="nav__toggle"
                     id="nav_toggle"
                     onClick={handleToggle}
                 >
-                    <FontAwesomeIcon icon={solid("border-all")} />
+                    <FontAwesomeIcon
+                        className="main__icon"
+                        icon={solid("bars-staggered")}
+                    />
                 </div>
             </div>
         </div>

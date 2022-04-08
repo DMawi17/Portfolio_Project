@@ -8,8 +8,6 @@ import { v4 } from "uuid";
 function About() {
     const { buttons, about } = useData();
 
-
-
     const { about_title, about_description, about_content } = about;
     const { aboutBtn } = buttons;
     const arrContent = Object.values(about_content);
@@ -40,7 +38,7 @@ function About() {
                     </div>
 
                     <div className="about__button">
-                        <a href="/" className="button button--flex">
+                        <a href="/" className="button button-flex">
                             <MainBtn {...aboutBtn} />
                         </a>
                     </div>

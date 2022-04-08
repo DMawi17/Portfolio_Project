@@ -1,6 +1,6 @@
 /* CSS HEX */
 
-$clr-hue: 270;
+$clr-hue: 210;
 
 $clr-primary: hsl($clr-hue, 69%, 61%);
 $clr-secondary: hsl($clr-hue, 69%, 61%);
@@ -14,6 +14,8 @@ $clr-body: hsl($clr-hue, 60%, 99%);
 $clr-container: #fff;
 $clr-scroll-bar: hsl($clr-hue, 12%, 90%);
 $clr-scroll-thumb: hsl($clr-hue, 12%, 80%);
+$clr-bg-light: hsla(0, 0%, 67%, 0.6);
+$clr-bg-light-transparent: hsla(0, 0%, 67%, 0.5);
 
 /* Dark theme */
 

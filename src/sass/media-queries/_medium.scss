@@ -12,7 +12,6 @@
 
         &__img {
             order: 1;
-            justify-self: center;
         }
     }
 
@@ -22,6 +21,12 @@
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__icon,
+    .skills__arrow {
+        font-size: 2rem;
+        color: $clr-primary;
     }
 
     .qualification__section {

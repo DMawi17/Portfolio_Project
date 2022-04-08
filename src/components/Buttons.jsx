@@ -44,7 +44,7 @@ function ScrollDownBtn({ name, icons }) {
 
 function QualificationBtn({ name, icon }) {
     return (
-        <div className="qualification__button button--flex">
+        <div className="qualification__button button-flex">
             <FontAwesomeIcon icon={icon} className="qualification__icon" />
             {name}
         </div>
@@ -56,7 +56,7 @@ function ServiceBtn({ props }) {
 
     return (
         <span
-            className="button button--flex button-small button-link services__button"
+            className="button button-flex button-small button-link services__button"
             onClick={() => handleModal()}
         >
             {serviceBtn.name}
@@ -71,10 +71,10 @@ function PortfolioBtn({ props }) {
     return (
         <a
             href="/"
-            className="button button--flex button-small portfolio__button"
+            className="button button-flex button-small portfolio__button"
         >
             {content.BtnName}
-            <FontAwesomeIcon icon={icons.arrowRgt} className="button_icon" />
+            <FontAwesomeIcon icon={icons.arrowRgt} className="button__icon" />
         </a>
     );
 }
