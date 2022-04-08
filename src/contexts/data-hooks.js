@@ -20,6 +20,13 @@ export const DataProvider = ({ children }) => {
 
     // Icons:
     const icons = {
+        user: solid("user"),
+        house: solid("house-chimney"),
+        file: solid("file-alt"),
+        img: solid("image"),
+        x: solid("x"),
+        bars: solid("bars-staggered"),
+
         angle_down: solid("angle-down"),
         code: solid("code"),
         paperPlane: solid("paper-plane"),
@@ -47,6 +54,14 @@ export const DataProvider = ({ children }) => {
 
     // Buttons:
     const buttons = {
+        navBtn: [
+            { name: "home", icon: icons.house },
+            { name: "about", icon: icons.user },
+            { name: "skills", icon: icons.file },
+            { name: "portfolio", icon: icons.img },
+            { name: "contact", icon: icons.paperPlane },
+        ],
+
         introBtn: {
             name: "Contact Me",
             icon: icons.paperPlane,
