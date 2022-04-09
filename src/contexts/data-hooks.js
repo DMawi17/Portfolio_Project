@@ -27,7 +27,7 @@ export const DataProvider = ({ children }) => {
         x: solid("x"),
         bars: solid("bars-staggered"),
 
-        angle_down: solid("angle-down"),
+        angles_down: solid("angles-down"),
         code: solid("code"),
         paperPlane: solid("paper-plane"),
         download: solid("download"),
@@ -68,10 +68,8 @@ export const DataProvider = ({ children }) => {
         },
 
         scrollDwnBtn: {
-            name: "Scroll down",
             icons: {
-                mouse: icons.mouse,
-                arrowDwn: icons.arrowDwn,
+                angles_down: icons.angles_down,
             },
         },
 
