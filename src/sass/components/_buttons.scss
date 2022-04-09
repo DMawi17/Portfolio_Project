@@ -6,7 +6,7 @@
     background-color: $clr-primary;
     color: #fff;
     padding: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
     font-weight: $fw-reg;
 
     &:hover {
@@ -60,6 +60,7 @@
 
 .intro__button,
 .form__button {
+    box-shadow: $button-shadow;
     &:hover {
         .button__icon {
             transform: translateX(0.25rem) translateY(-0.25rem);
@@ -72,27 +73,28 @@
     display: none;
 
     &-button {
+        width: 2rem;
+        height: 3rem;
+        border-radius: 3rem;
         color: $clr-primary;
         transition: 0.3s;
+        background-color: $clr-input;
+
+        box-shadow: $scroll-shadowI;
     }
 
     &-button:hover {
-        transform: translateY(0.25rem);
-    }
+        box-shadow: none;
 
-    &-mouse {
-        font-size: 2rem;
-    }
-
-    &-name {
-        font-size: $fs-sm;
-        color: $clr-title;
-        font-weight: $fw-reg;
-        margin: 0 $mb-025 0;
+        .home__scroll-arrow {
+            transition: 0.3s;
+            transform: translateY(0.25rem);
+        }
     }
 
     &-arrow {
-        font-size: 1.25rem;
+        margin: auto;
+        transition: 0.3s;
     }
 }
 
@@ -100,6 +102,8 @@
 .about__button {
     display: flex;
     justify-content: center;
+    width: fit-content;
+    box-shadow: $button-shadow;
 
     &:hover {
         .button__icon {
@@ -139,6 +143,7 @@
 // PORTFOLIO BUTTON
 .portfolio__button {
     margin: $mb-10 0 $mb-20;
+    box-shadow: $button-shadow;
 
     &:hover {
         .button__icon {
@@ -158,9 +163,11 @@
     border-radius: 0.3rem;
     z-index: $z-tooltip;
     transition: 0.4s;
+    box-shadow: $button-shadow;
 
     &:hover {
         background-color: $clr-tertiary;
+        cursor: pointer;
     }
 
     &__icon {

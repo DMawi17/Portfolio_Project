@@ -37,8 +37,11 @@ function About() {
                         {arrContent.map((elem) => renderAboutList(elem))}
                     </div>
 
-                    <div className="about__button">
-                        <a href="/" className="button button-flex">
+                    <div className="">
+                        <a
+                            href="/"
+                            className="button about__button button-flex"
+                        >
                             <MainBtn {...aboutBtn} />
                         </a>
                     </div>
