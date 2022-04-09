@@ -6,7 +6,7 @@ function SkillHeader({ props }) {
     const [skill_header, handleToggle, toggleOpen] = props;
 
     const { icons } = useData();
-    const { angle_down, code } = icons;
+    const { angles_down, code } = icons;
 
     return (
         <div className="skills__header">
@@ -15,7 +15,7 @@ function SkillHeader({ props }) {
             <SubMainTitleSkills {...skill_header} />
 
             <FontAwesomeIcon
-                icon={angle_down}
+                icon={angles_down}
                 className="skills__arrow"
                 style={toggleOpen ? { transform: "rotate(-180deg)" } : {}}
                 onClick={() => handleToggle()}
