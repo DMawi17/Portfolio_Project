@@ -22,7 +22,7 @@ function Qualification() {
                     ))}
                 </div>
 
-                <div className="qualification__sections">
+                <div className="qualification__section">
                     <QualificationContent
                         props={{ qualification_contents, cal }}
                     />
