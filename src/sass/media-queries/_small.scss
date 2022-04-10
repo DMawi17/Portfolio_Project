@@ -39,10 +39,16 @@
     }
 }
 
-@media (max-width: 568px) {
+// @media (max-width: 568px) {
+//     .portfolio__container {
+//         top: 25%;
+//     }
+// }
+
+@media (max-width: 768px) {
+
     .swiper-button-prev,
     .swiper-button-next {
-        top: 16vh;
         background: $clr-bg-light-transparent;
 
         &:hover {

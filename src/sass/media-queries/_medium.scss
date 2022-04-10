@@ -34,6 +34,13 @@
         grid-template-columns: 0.6fr;
         justify-content: center;
     }
+
+    .swiper-button {
+        &-prev,
+        &-next {
+            top: 50%;
+        }
+    }
 }
 
 @media (min-width: 768px) {
@@ -96,10 +103,6 @@
         }
 
         &__content {
-            * {
-                // outline: 2px solid red;
-            }
-
             padding-top: 5.5rem;
             column-gap: 2rem;
         }
@@ -149,51 +152,13 @@
         }
     }
 
-    .portfolio {
-        &_img {
-            width: 320px;
-            position: relative;
-        }
-
-        &__content {
-            align-items: center;
-        }
+    .portfolio_img {
+        width: 320px;
     }
 
     .mySwiper {
         padding: 2.5rem;
     }
-
-    // .swiper {
-    //     &-button {
-    //         &-prev {
-    //             left: 0.15rem;
-    //         }
-    //         &-next {
-    //             right: 0.15rem;
-    //         }
-
-    //         &-prev,
-    //         &-next {
-    //             color: $clr-primary;
-    //             top: 26%;
-
-    //             &::after,
-    //             &::after {
-    //                 font-size: 1.5rem;
-    //                 border-radius: 1px solid red;
-    //             }
-    //         }
-    //     }
-
-    //     &-horizontal > &-pagination-bullets {
-    //         bottom: 0;
-    //     }
-
-    //     &-pagination-bullet-active {
-    //         background-color: $clr-primary;
-    //     }
-    // }
 
     .footer {
         &__container {

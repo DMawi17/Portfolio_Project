@@ -1,10 +1,13 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 .swiper {
+    position: static;
+
     &-button {
         &-prev {
             left: 0.15rem;
         }
+
         &-next {
             right: 0.15rem;
         }
@@ -12,9 +15,9 @@
         &-prev,
         &-next {
             color: $clr-primary;
-            top: 22.5vh;
             border-radius: 0.25rem;
             transition: 0.3s;
+            top: 35%;
 
             &::after,
             &::after {
@@ -23,7 +26,7 @@
         }
     }
 
-    &-horizontal > &-pagination-bullets {
+    &-horizontal>&-pagination-bullets {
         bottom: 0;
     }
 
