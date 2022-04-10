@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 .header {
     width: 100%;
@@ -7,4 +7,5 @@
     left: 0;
     z-index: $z-fixed;
     background-color: $clr-body;
+    box-shadow: $bsh-light;
 }

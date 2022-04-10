@@ -19,7 +19,7 @@ function Navigation() {
     return (
         <div className="nav container">
             <a href="#home" className="nav__logo">
-                DMawi
+                Dagamwi Asegid
             </a>
 
             <div

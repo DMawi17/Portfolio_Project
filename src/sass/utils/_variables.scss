@@ -1,14 +1,22 @@
 @use "./fonts";
 
 /* Main fonts */
-$ff-primary: "Poppins", sans-serif;
-$ff-secondary: "Source Code Pro", monospace;
-$ff-tertiary: "WindSong", cursive;
+$ff-primary: "Poppins",
+sans-serif;
+$ff-secondary: "Source Code Pro",
+monospace;
+$ff-tertiary: "WindSong",
+cursive;
 
 /* Spare fonts */
 $altona: "AltonaSans";
 $b-phantom: "BlackPhantom";
 $h-softed: "HartoneSofted";
+$signature: "Signature";
+$dhanikans: "Dhanikans";
+$megidame: "Megidame";
+$photography: "Photography";
+$queens: "Queens";
 $signature: "Signature";
 
 /* Font size */
@@ -60,4 +68,4 @@ $header-height: 3rem;
 $bsh-light: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 
 $bsh-reg: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
