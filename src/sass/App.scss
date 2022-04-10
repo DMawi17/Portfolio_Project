@@ -1,8 +1,8 @@
 @use "./utils"as *;
 @use "./base/reset";
 
-/* General style */
 
+/* General style */
 html {
     scroll-behavior: smooth;
 }
@@ -13,10 +13,6 @@ body {
     font-size: $fs-body;
     background-color: $clr-body;
     color: $clr-txt;
-}
-
-.footer_bg {
-    background: $clr-primary;
 }
 
 h1,
