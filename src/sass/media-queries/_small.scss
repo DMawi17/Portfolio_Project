@@ -1,0 +1,58 @@
+@use "../utils/"as *;
+
+@media (max-width: 350px) {
+    .container {
+        margin-left: $mb-10;
+        margin-right: $mb-10;
+    }
+
+    .nav {
+        &__menu {
+            padding: 2rem 0.25rem 4rem;
+        }
+
+        &__list {
+            column-gap: 0;
+        }
+    }
+
+    .home {
+        &__content {
+            grid-template-columns: 0.25fr 3fr;
+        }
+
+        &__blob {
+            width: 180px;
+        }
+    }
+
+    .skills__title {
+        font-size: $fs-body;
+    }
+
+    .qualification__data {
+        gap: 0.5rem;
+    }
+
+    .portfolio__data {
+        margin: 0.3rem;
+    }
+}
+
+// @media (max-width: 568px) {
+//     .portfolio__container {
+//         top: 25%;
+//     }
+// }
+
+@media (max-width: 768px) {
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background: $clr-bg-light-transparent;
+
+        &:hover {
+            background: $clr-bg-light;
+        }
+    }
+}

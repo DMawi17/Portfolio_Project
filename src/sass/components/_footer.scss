@@ -1,0 +1,14 @@
+@use "../utils" as *;
+
+.footer {
+    padding-top: 2rem;
+
+    &__container {
+        row-gap: 3.5rem;
+    }
+
+    &__bg {
+        background-color: $clr-secondary;
+        padding: 2rem 0 3rem;
+    }
+}

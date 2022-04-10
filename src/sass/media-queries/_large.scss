@@ -1,0 +1,49 @@
+@use "../utils/"as *;
+
+@media (min-width: 1024px) {
+    body {
+        background-image: url(../../svgComponents/footer_bg.svg);
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header,
+    .main,
+    .footer__container {
+        padding: 0;
+    }
+
+    .home {
+        &__blob {
+            width: 320px;
+        }
+
+        &__social {
+            transform: translateX(-6rem);
+        }
+    }
+
+    .portfolio__content {
+        column-gap: 5rem;
+    }
+
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        &__form {
+            width: 460px;
+        }
+
+        &__inputs {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .footer__bg {
+        background-color: transparent;
+    }
+}

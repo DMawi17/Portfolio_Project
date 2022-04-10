@@ -1,22 +1,39 @@
 // @use "base/reset";
 // @use "base/typography";
 
-@use "layouts/footer";
-@use "layouts/header";
-@use "layouts/navigation";
-@use "layouts/forms";
-
-@use "components/buttons";
-@use "components/cards";
-
+/* CORE */
 @use "./App.scss";
 @use "pages/Home";
+
+/* LAYOUTS */
+@use "layouts/footer";
+@use "layouts/header";
+@use "layouts/nav";
+@use "layouts/forms";
+
+/* COMPONENTS */
+
+@use "components/buttons";
+@use "components/intro";
+@use "components/main";
+@use "components/skills";
+@use "components/qualification";
+@use "components/service";
+@use "components/portfolioSlider";
+@use "components/darkMode";
+
+/* PAGES */
 
 @use "pages/about";
 @use "pages/contact";
 @use "pages/error404";
-@use "pages/landing_page";
+@use "pages/home";
 @use "pages/portfolio";
+
+/* MEDIA QUERIES */
+@use "media-queries/small";
+@use "media-queries/medium";
+@use "media-queries/large";
 
 // @use "vendors/bootstrap";
 // @use "vendors/mui";

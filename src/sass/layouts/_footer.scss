@@ -1,10 +1,55 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 .footer {
-    height: 10vh;
-    background: $terra-cotta;
-    text-align: center;
+    padding-top: 2rem;
 
-    font-family: $signature;
-    font-size: $fs-body;
+    &__container {
+        row-gap: 3.5rem;
+    }
+
+    &__bg {
+        background-color: $clr-secondary;
+    }
+
+    &__title {
+        font-size: $fs-h1;
+        margin-bottom: $mb-025;
+    }
+
+    &__subtitle {
+        font-size: $fs-sm;
+    }
+
+    &__links {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+    }
+
+    &__link:hover {
+        color: $clr-primary-light;
+    }
+
+    &__social {
+        font-size: 1.25rem;
+        margin-right: $mb-15;
+
+        &:hover {
+            color: $clr-primary-light;
+        }
+    }
+
+    &__copy {
+        font-size: $fs-xsm;
+        text-align: center;
+        color: $clr-txt-light;
+        margin-top: $mb-30;
+    }
+
+    &__title,
+    &__subtitle,
+    &__link,
+    &__social {
+        color: #fff;
+    }
 }

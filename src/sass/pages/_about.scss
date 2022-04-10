@@ -1,10 +1,36 @@
 @use "../utils/" as *;
 
-.about {
-    height: 70vh;
-    background: $maximum-yellow-red;
-    text-align: center;
+.about__img {
+    background: lightgrey;
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+}
 
-    font-family: $b-phantom;
-    font-size: $fs-h1;
+.about__description {
+    text-align: center;
+    margin-bottom: $mb-25;
+}
+
+.about__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: $mb-25;
+}
+
+.about__info-name {
+    font-size: $fs-sm;
+}
+
+.about__info-title {
+    font-size: $fs-h2;
+    font-weight: $fw-semi-bold;
+    color: $clr-title;
+}
+
+.about__info-name,
+.about__info-title {
+    display: block;
+    text-align: center;
 }

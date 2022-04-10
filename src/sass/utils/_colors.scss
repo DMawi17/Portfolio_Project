@@ -1,69 +1,30 @@
 /* CSS HEX */
-$clr-light: #ffffff;
-$clr-med: #aaa;
-$clr-dark: #303030;
 
-/* SCSS HEX */
-$maximum-yellow-red: #f6b345ff;
-$terra-cotta: #f0745eff;
-$turquoise: #4dd7c3ff;
-$yellow-crayola: #fdeb85ff;
+$clr-hue: 210;
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(
-    0deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-right: linear-gradient(
-    90deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-bottom: linear-gradient(
-    180deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-left: linear-gradient(
-    270deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-top-right: linear-gradient(
-    45deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-bottom-right: linear-gradient(
-    135deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-top-left: linear-gradient(
-    225deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-bottom-left: linear-gradient(
-    315deg,
-    #f6b345ff,
-    #f0745eff,
-    #4dd7c3ff,
-    #fdeb85ff
-);
-$gradient-radial: radial-gradient(#f6b345ff, #f0745eff, #4dd7c3ff, #fdeb85ff);
+$clr-primary: #579ce0;
+$clr-primary: hsl($clr-hue, 69%, 61%);
+$clr-tertiary: hsl($clr-hue, 57%, 53%);
+$clr-primary-light: hsl($clr-hue, 92%, 85%);
+$clr-txt-light: hsl($clr-hue, 8%, 65%);
+$clr-bg-light: hsla(0, 0%, 67%, 0.6);
+$clr-bg-light-transparent: hsla(0, 0%, 67%, 0.5);
+$clr-secondary: hsl($clr-hue, 69%, 61%);
+$clr-title: hsl($clr-hue, 8%, 15%);
+$clr-txt: hsl($clr-hue, 8%, 45%);
+$clr-input: hsl($clr-hue, 70%, 96%);
+$clr-body: hsl($clr-hue, 60%, 99%);
+$clr-container: #fff;
+$clr-scroll-bar: hsl($clr-hue, 12%, 90%);
+$clr-scroll-thumb: hsl($clr-hue, 12%, 80%);
+
+/* Dark theme */
+
+// $clr-secondary: hsl($clr-hue, 30%, 8%);
+// $clr-title: hsl($clr-hue, 8%, 95%);
+// $clr-txt: hsl($clr-hue, 8%, 75%);
+// $clr-input: hsl($clr-hue, 29%, 16%);
+// $clr-body: hsl($clr-hue, 28%, 12%);
+// $clr-container: hsl($clr-hue, 29%, 16%);
+// $clr-scroll-bar: hsl($clr-hue, 12%, 48%);
+// $clr-scroll-thumb: hsl($clr-hue, 12%, 36%);

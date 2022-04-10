@@ -1,0 +1,185 @@
+@use "../utils/"as *;
+
+@media (min-width: 568px) {
+    .home {
+        &__content {
+            grid-template-columns: max-content 1fr 1fr;
+        }
+
+        .intro {
+            grid-column: initial;
+        }
+
+        &__img {
+            order: 1;
+        }
+    }
+
+    .about__container,
+    .skills__container,
+    .portfolio__content,
+    .contact__container,
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skills__icon,
+    .skills__arrow {
+        font-size: 2rem;
+        color: $clr-primary;
+    }
+
+    .qualification__section {
+        display: grid;
+        grid-template-columns: 0.6fr;
+        justify-content: center;
+    }
+
+    .swiper-button {
+        &-prev,
+        &-next {
+            top: 50%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .section {
+        padding: 7.5rem 0 2rem;
+
+        &__subtitle {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .header {
+        top: 0;
+        bottom: initial;
+    }
+
+    .header,
+    .main,
+    .footer__container {
+        padding: 0 1rem;
+    }
+
+    .nav {
+        height: calc($header-height + 1.5rem);
+        column-gap: 2.5rem;
+
+        &__icon,
+        &__close,
+        &__toggle {
+            display: none;
+        }
+
+        &__list {
+            display: flex;
+            column-gap: 2rem;
+        }
+
+        &__menu,
+        &__hidden {
+            margin-left: auto;
+        }
+
+        .change-theme {
+            margin: 0;
+        }
+    }
+
+    .home {
+        &__container {
+            row-gap: 5rem;
+        }
+
+        &__content {
+            padding-top: 5.5rem;
+            column-gap: 2rem;
+        }
+
+        &__blob {
+            width: 270px;
+        }
+
+        &__scroll {
+            display: block;
+        }
+    }
+
+    .about {
+        &__container {
+            column-gap: 5rem;
+        }
+
+        &__img {
+            width: 350px;
+        }
+
+        &__description {
+            text-align: initial;
+        }
+
+        &__info {
+            justify-content: space-between;
+        }
+
+        &__button {
+            justify-content: initial;
+        }
+    }
+
+    .qualification {
+        &__tabs {
+            justify-content: space-around;
+        }
+
+        &__button {
+            margin: 0 $mb-10;
+        }
+
+        &__section {
+            grid-template-columns: 0.5fr;
+        }
+    }
+
+    .portfolio_img {
+        width: 320px;
+    }
+
+    .mySwiper {
+        padding: 2.5rem;
+    }
+
+    .footer {
+        &__container {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &__bg {
+            padding: 3rem 0rem 3.5rem;
+        }
+
+        &__links {
+            flex-direction: row;
+            column-gap: 2rem;
+        }
+
+        &__socials {
+            justify-self: flex-end;
+        }
+
+        &__copy {
+            margin-top: 4.5rem;
+        }
+    }
+}

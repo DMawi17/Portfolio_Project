@@ -1,8 +1,21 @@
+import { useData } from "../contexts/data-hooks";
+import MainTitle from "../components/titles/MainTitle";
+import PortfolioSlider from "../components/projects/PortfolioSlider";
+
 function Portfolio() {
+    const { portfolio, icons } = useData();
+    const { portfolio_title } = portfolio;
+
     return (
-        <div className="portfolio">
-            <h1>Portfolio</h1>
-        </div>
+        <section className="portfolio section" id="portfolio">
+            <MainTitle {...portfolio_title} />
+
+            <div className="portfolio__container container">
+                <div>
+                    <PortfolioSlider props={{ portfolio, icons }} />
+                </div>
+            </div>
+        </section>
     );
 }
 

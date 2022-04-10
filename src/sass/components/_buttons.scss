@@ -1,1 +1,177 @@
-@use "../utils/" as u;
+@use "../utils/" as *;
+
+// GENERAL BUTTONS
+.button {
+    display: inline-block;
+    background-color: $clr-primary;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    font-weight: $fw-reg;
+
+    &:hover {
+        background-color: $clr-tertiary;
+        // margin-left: $mb-05; // FIXME:
+        transition: 0.3s;
+    }
+
+    &__icon {
+        font-size: 1.25rem;
+        margin-left: $mb-05;
+        transition: 0.3s;
+    }
+
+    &-flex {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    &-small {
+        padding: 0.75rem 1rem;
+    }
+
+    &-link {
+        padding: 0;
+        background-color: transparent;
+        color: $clr-primary;
+
+        &:hover {
+            background-color: transparent;
+            color: $clr-tertiary;
+        }
+    }
+}
+
+// SOCIAL BUTTONS
+.home__social {
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+
+    &-icon {
+        font-size: 1.2rem;
+        color: $clr-primary;
+    }
+
+    &-icon:hover {
+        color: $clr-tertiary;
+    }
+}
+
+.intro__button,
+.form__button {
+    box-shadow: $bsh-reg;
+    &:hover {
+        .button__icon {
+            transform: translateX(0.25rem) translateY(-0.25rem);
+        }
+    }
+}
+
+// SCROLL BUTTON
+.home__scroll {
+    display: none;
+
+    &-button {
+        width: 2rem;
+        height: 3rem;
+        border-radius: 3rem;
+        color: $clr-primary;
+        transition: 0.3s;
+        background-color: $clr-input;
+
+        box-shadow: $bsh-light;
+    }
+
+    &-button:hover {
+        box-shadow: none;
+
+        .home__scroll-arrow {
+            transition: 0.3s;
+            transform: translateY(0.25rem);
+        }
+    }
+
+    &-arrow {
+        margin: auto;
+        transition: 0.3s;
+    }
+}
+
+// ABOUT BUTTON
+.about__button {
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+    box-shadow: $bsh-reg;
+
+    &:hover {
+        .button__icon {
+            transform: translateY(0.25rem);
+        }
+    }
+}
+
+// SKILL BUTTON
+.skills__arrow {
+    transition: 0.4s;
+}
+
+// QUALIFICATION BUTTON
+.qualification__button {
+    font-size: $fs-h3;
+    font-weight: $fw-reg;
+}
+
+.qualification__icon {
+    font-size: 1.8rem;
+    margin-right: $mb-025;
+}
+
+// SERVICE BUTTON
+.services__button {
+    cursor: pointer;
+    font-style: $fs-sm;
+
+    &:hover {
+        .button__icon {
+            transform: translateX(0.25rem);
+        }
+    }
+}
+
+// PORTFOLIO BUTTON
+.portfolio__button {
+    margin: $mb-10 0 $mb-20;
+    box-shadow: $bsh-reg;
+
+    &:hover {
+        .button__icon {
+            transform: translateX(0.25rem);
+        }
+    }
+}
+
+// SCROLL UP BUTTON
+.scrollUp {
+    position: fixed;
+    right: 1rem;
+    bottom: 5rem;
+    background-color: $clr-primary;
+    opacity: 0.8;
+    padding: 0.3rem 0.5rem 0.1rem;
+    border-radius: 0.3rem;
+    z-index: $z-tooltip;
+    transition: 0.4s;
+    box-shadow: $bsh-reg;
+
+    &:hover {
+        background-color: $clr-tertiary;
+        cursor: pointer;
+    }
+
+    &__icon {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+}

@@ -1,0 +1,26 @@
+@use "../utils/" as *;
+
+.home {
+    &__container {
+        gap: 1rem;
+    }
+
+    &__content {
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+        align-items: center;
+    }
+
+    &__blob {
+        width: 200px;
+        // fill: $clr-primary;
+    }
+
+    &__blob-img {
+        width: 170px;
+    }
+
+    &__img {
+        justify-self: center;
+    }
+}

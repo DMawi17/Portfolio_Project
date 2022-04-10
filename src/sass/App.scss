@@ -1,6 +1,83 @@
-@use "./utils" as *;
+@use "./utils"as *;
 @use "./base/reset";
 
-.app {
-    border: 4px solid red;
+
+/* General style */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 $header-height 0;
+    font-family: $ff-primary;
+    font-size: $fs-body;
+    background-color: $clr-body;
+    color: $clr-txt;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: $clr-title;
+    font-weight: $fw-semi-bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    min-width: 100%;
+    height: auto;
+}
+
+.section {
+    padding: 2rem 0 4rem;
+}
+
+.section__title {
+    font-size: $fs-h1;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: $fs-sm;
+    margin-bottom: $mb-30;
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
+.container {
+    max-width: 768px;
+    margin-left: $mb-15;
+    margin-right: $mb-15;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+    width: 0.8rem;
+    background-color: $clr-scroll-bar;
+    border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $clr-scroll-thumb;
+    border-radius: 0.5rem;
+
+    &:hover {
+        background-color: $clr-txt-light;
+    }
 }

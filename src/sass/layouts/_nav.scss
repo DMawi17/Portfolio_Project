@@ -1,0 +1,100 @@
+@use "../utils/"as *;
+
+.nav {
+    max-width: 968px;
+    height: $header-height;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        font-family: $signature;
+        font-size: $fs-h2;
+        margin-top: 1rem;
+
+        &:hover {
+            color: $clr-primary;
+        }
+    }
+
+    .nav__toggle {
+        font-size: 1.1rem;
+        cursor: pointer;
+
+        &:hover {
+            color: $clr-primary;
+        }
+    }
+
+    &__logo,
+    &__toggle {
+        color: $clr-txt;
+        font-weight: $fw-reg;
+    }
+
+    &__list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    &__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: $fs-sm;
+        color: $clr-title;
+        font-weight: $fw-reg;
+
+        &:hover {
+            color: $clr-primary;
+        }
+    }
+
+    &__icon {
+        font-size: 1.2rem;
+    }
+
+    .main__icon {
+        font-size: 1.6rem;
+    }
+
+    &__close {
+        position: absolute;
+        right: 1.3rem;
+        bottom: 0.5rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $clr-primary;
+
+        &:hover {
+            color: $clr-tertiary;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .nav {
+        &__logo {
+            font-size: $fs-h3;
+            margin: 0;
+        }
+
+        &__menu {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 98%;
+            background-color: $clr-input;
+            padding: 2rem 1.5rem 4rem;
+            box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 1.5rem 1.5rem 0 0;
+            transition: 0.3s;
+            margin: 0 1% 0;
+            opacity: 0.98;
+        }
+
+        &__hidden {
+            display: none;
+        }
+    }
+}
