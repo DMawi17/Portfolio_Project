@@ -19,7 +19,7 @@ function QualificationContent({ props }) {
         if (inView) {
             animation.start({
                 opacity: 1,
-                x: 0,
+                y: 0,
                 transition: { duration: 1, bounce: 0.3 },
             });
         }
@@ -45,7 +45,7 @@ function QualificationContent({ props }) {
                         <motion.div
                             animate={animation}
                             initial={{
-                                x: "-20vw",
+                                y: "-10vh",
                                 opacity: 0,
                             }}
                             key={v4()}
@@ -60,7 +60,7 @@ function QualificationContent({ props }) {
                         <motion.div
                             animate={animation}
                             initial={{
-                                x: "+20vw",
+                                y: "+10vh",
                                 opacity: 0,
                             }}
                             key={v4()}

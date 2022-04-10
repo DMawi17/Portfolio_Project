@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 @media (max-width: 350px) {
     .container {
@@ -37,26 +37,9 @@
     .portfolio__data {
         margin: 0.3rem;
     }
-
-    // .services {
-    //     &__container {
-    //         grid-template-columns: max-content;
-    //         justify-content: center;
-    //     }
-
-    //     &__content {
-    //         padding-right: 3.5rem;
-    //     }
-
-    //     &__services__modal {
-    //         padding: 0 0.5rem;
-    //     }
-    //     //..
-    // }
 }
 
 @media (max-width: 568px) {
-    
     .swiper-button-prev,
     .swiper-button-next {
         top: 16vh;

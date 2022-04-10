@@ -76,11 +76,9 @@ function About() {
                         animate={animation}
                         transition={{
                             duration: 3,
-                            // bounce: 0.3,
                         }}
-                        className="about__button"
                     >
-                        <a href="/" className="button button-flex">
+                        <a href="/" className="button about__button button-flex">
                             <MainBtn {...aboutBtn} />
                         </a>
                     </motion.div>

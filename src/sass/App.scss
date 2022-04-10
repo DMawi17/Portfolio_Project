@@ -1,4 +1,4 @@
-@use "./utils" as *;
+@use "./utils"as *;
 @use "./base/reset";
 
 /* General style */
@@ -13,12 +13,6 @@ body {
     font-size: $fs-body;
     background-color: $clr-body;
     color: $clr-txt;
-
-    background-image: url(../svgComponents/footer_bg.svg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    padding: 2rem 0 3rem;
 }
 
 .footer_bg {
