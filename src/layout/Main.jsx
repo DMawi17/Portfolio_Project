@@ -2,13 +2,13 @@ import Qualification from "../components/qualification/Qualification";
 import Skills from "../components/skills/Skills";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import LandingPage from "../pages/Home";
+import Home from "../pages/Home";
 import Portfolio from "../pages/Portfolio";
 
 function Main() {
     return (
         <div className="main">
-            <LandingPage />
+            <Home />
             <About />
             <Skills />
             <Qualification />

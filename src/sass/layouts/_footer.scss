@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 .footer {
     padding-top: 2rem;
@@ -8,8 +8,7 @@
     }
 
     &__bg {
-        // background-color: $clr-secondary;
-       
+        background-color: $clr-secondary;
     }
 
     &__title {

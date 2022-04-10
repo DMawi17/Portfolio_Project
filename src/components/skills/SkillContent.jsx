@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { v4 } from "uuid";
+
 import SkillList from "./SkillList";
 import SkillHeader from "./SkillHeader";
-import { v4 } from "uuid";
 
 function SkillContent({ skill_header, skill_list }) {
     const [toggleOpen, setToggleOpen] = useState(false);
