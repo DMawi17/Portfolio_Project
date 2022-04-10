@@ -4,8 +4,7 @@
             "title": "Hi, I'm Mawi",
             "subtitle": "Web Developer"
         },
-
-        "intro_description": "I build applications for the web because I like interacting with attractive and user-friendly UI/UX elements.",
+        "intro_description": "I like to build attractive and easy to use applications for the web.",
 
         "socials": {
             "LinkedIn": "https://www.linkedin.com/in/dmawi17/",
@@ -15,9 +14,9 @@
     },
 
     "about": {
-        "about_title": { "title": "About Me", "subtitle": "My introduction" },
+        "about_title": { "title": "About Me", "subtitle": "Introduction" },
 
-        "about_description": "Lorem ipsum dolor sit amet adipisicing elit. Recusandae modi aliquam cupiditate ad delectus animi. Molestiae, aliquid. Sint quam corrupti quis doloribus, molestiae, reiciendis illo ex, itaque fugiat praesentium animi",
+        "about_description": "I'm a recent graduate from DCI gGmbH in MERN Stack technologies. During my studies, I completed a three-month internship program where I mainly focused on Front-end development. I have a keen interest in the internet of things. It helps me to learn them with ease.",
 
         "about_content": {
             "experience": ["03", "Month", "experience"],
@@ -27,32 +26,34 @@
     },
 
     "skills": {
-        "skill_title": { "title": "Skills", "subtitle": "My technical level" },
+        "skill_title": { "title": "Skills", "subtitle": "Technical levels" },
 
         "skill_content": [
             {
                 "skill_header": {
                     "title": "Frontend development",
-                    "subtitle": "More than 3 month"
+                    "subtitle": "Three months experience"
                 },
 
                 "skill_list": [
                     { "title": "HTML", "data": "90%" },
                     { "title": "CSS", "data": "80%" },
                     { "title": "JavaScript", "data": "60%" },
-                    { "title": "React", "data": "70%" }
+                    { "title": "React", "data": "70%" },
+                    { "title": "Redux", "data": "65%" }
                 ]
             },
 
             {
                 "skill_header": {
                     "title": "Backend Development",
-                    "subtitle": "More than 3 month"
+                    "subtitle": "Three months experience"
                 },
 
                 "skill_list": [
                     { "title": "NodeJs", "data": "60%" },
                     { "title": "Express", "data": "70%" },
+                    { "title": "MongoDB", "data": "75%" },
                     { "title": "Firebase", "data": "60%" }
                 ]
             }
@@ -62,7 +63,7 @@
     "qualification": {
         "qualification_title": {
             "title": "Qualification & Experience",
-            "subtitle": "My personal journey"
+            "subtitle": "My journey"
         },
         "qualification_contents": [
             {
@@ -96,16 +97,6 @@
         ]
     },
 
-    "service": {
-        "service_title": { "title": "Services", "subtitle": "What I offer" },
-        "service_content": [
-            "I develope user interfaces.",
-            "Web page development.",
-            "I create ux element interactions.",
-            "I position you company brand"
-        ]
-    },
-
     "portfolio": {
         "portfolio_title": {
             "title": "Portfolio",
@@ -121,13 +112,13 @@
             },
             {
                 "title": "Admin Dashboard",
-                "description": "An admin dashboard site with graph representation.",
+                "description": "An admin dashboard site with graphical representation.",
                 "BtnName": "Demo",
                 "img_url": "images/admin.png"
             },
             {
                 "title": "Music Streaming Website",
-                "description": "A music streaming site to listen and share music",
+                "description": "A music streaming site to listen to and share music",
                 "BtnName": "Demo",
                 "img_url": "images/sound.png"
             }
@@ -141,5 +132,5 @@
         }
     },
 
-    "footer": ["about", "portfolio", "contact"]
+    "footer": ["home", "about", "portfolio"]
 }
