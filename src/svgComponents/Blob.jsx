@@ -1,6 +1,13 @@
+import { motion } from "framer-motion";
+
 function Blob({ fill }) {
     return (
-        <div className="home__img">
+        <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2 }}
+            className="home__img"
+        >
             <svg
                 className="home__blob"
                 viewBox="0 0 200 200"
@@ -12,7 +19,7 @@ function Blob({ fill }) {
                     transform="translate(100 100)"
                 />
             </svg>
-        </div>
+        </motion.div>
     );
 }
 

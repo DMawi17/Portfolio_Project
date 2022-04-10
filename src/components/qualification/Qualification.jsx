@@ -18,7 +18,7 @@ function Qualification() {
             <div className="qualification__container container">
                 <div className="qualification__tabs">
                     {qualificationBtn.map((el) => (
-                        <QualificationBtn key={v4()} {...el} />
+                        <QualificationBtn key={v4()} {...el} /> // FIXME:
                     ))}
                 </div>
 

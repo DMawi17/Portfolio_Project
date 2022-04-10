@@ -36,9 +36,15 @@ function Intro() {
                 {intro_description}
             </motion.p>
 
-            <a href="#contact" className="button button-flex intro__button">
+            <motion.a
+                initial={{ x: 300, opacity: 0 }}
+                transition={{ type: "spring", duration: 0.6 }}
+                animate={{ x: 0, opacity: 1 }}
+                href="#contact"
+                className="button button-flex intro__button"
+            >
                 <MainBtn {...introBtn} />
-            </a>
+            </motion.a>
         </div>
     );
 }
