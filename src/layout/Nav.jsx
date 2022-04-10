@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import DarkMode from "../components/DarkMode";
 import { useData } from "../contexts/data-hooks";
 import NavList from "../components/NavList";
 import { v4 } from "uuid";
@@ -19,7 +18,7 @@ function Navigation() {
     return (
         <div className="nav container">
             <a href="#home" className="nav__logo">
-                Dagamwi Asegid
+                Dagmawi Asegid
             </a>
 
             <div
