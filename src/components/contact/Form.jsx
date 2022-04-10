@@ -42,13 +42,6 @@ function Form({ paperPlane }) {
                 </div>
             </div>
 
-            <div className="contact__content">
-                <label htmlFor="" className="contact__label">
-                    Project
-                </label>
-                <input type="text" className="contact__input" />
-            </div>
-
             <div ref={ref} className="contact__content">
                 <label htmlFor="" className="contact__label">
                     Message
@@ -57,7 +50,7 @@ function Form({ paperPlane }) {
                     name=""
                     id=""
                     cols="0"
-                    rows="7"
+                    rows="6"
                     className="contact__input"
                 ></textarea>
             </div>

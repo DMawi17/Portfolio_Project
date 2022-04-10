@@ -36,6 +36,7 @@
     }
 
     .swiper-button {
+
         &-prev,
         &-next {
             top: 50%;
@@ -99,7 +100,7 @@
 
     .home {
         &__container {
-            row-gap: 5rem;
+            row-gap: 2rem;
         }
 
         &__content {

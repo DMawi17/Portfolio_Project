@@ -35,9 +35,7 @@ function Footer() {
                     </div>
                 </div>
 
-                <p className="footer__copy">
-                    &#169; Dagmawi Asegid All Right Reserved
-                </p>
+                <p className="footer__copy">&#169;2022 Dagmawi Asegid</p>
             </div>
         </footer>
     );
