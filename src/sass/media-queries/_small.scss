@@ -39,13 +39,12 @@
     }
 }
 
-// @media (max-width: 568px) {
-//     .portfolio__container {
-//         top: 25%;
-//     }
-// }
 
 @media (max-width: 768px) {
+
+    .nav__logo {
+        font-size: $fs-sm;
+    }
 
     .swiper-button-prev,
     .swiper-button-next {
