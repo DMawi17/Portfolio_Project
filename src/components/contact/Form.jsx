@@ -37,7 +37,12 @@ function Form({ paperPlane }) {
                     <label htmlFor="" className="contact__label">
                         Name
                     </label>
-                    <input type="text" name="name" className="contact__input" />
+                    <input
+                        type="text"
+                        name="name"
+                        className="contact__input"
+                        required
+                    />
                 </div>
 
                 <div className="contact__content">
@@ -48,6 +53,7 @@ function Form({ paperPlane }) {
                         type="email"
                         name="email"
                         className="contact__input"
+                        required
                     />
                 </div>
             </div>
@@ -61,6 +67,7 @@ function Form({ paperPlane }) {
                     cols="0"
                     rows="6"
                     className="contact__input"
+                    required
                 ></textarea>
             </div>
             <motion.div
