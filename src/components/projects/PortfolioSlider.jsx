@@ -1,11 +1,12 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper";
+
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import PortfolioContent from "./PortfolioContent";
 import { v4 } from "uuid";
+import PortfolioContent from "./PortfolioContent";
 
 export default function PortfolioSlider({ props }) {
     const { portfolio, icons } = props;
