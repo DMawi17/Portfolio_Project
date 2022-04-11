@@ -3,7 +3,6 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { v4 } from "uuid";
 import { useData } from "../contexts/data-hooks";
-
 import AboutImg from "../svgComponents/AboutImg";
 import colors from "../sass/utils/_colors.scss";
 import MainTitle from "../components/titles/MainTitle";
@@ -78,7 +77,10 @@ function About() {
                             duration: 3,
                         }}
                     >
-                        <a href="/" className="button about__button button-flex">
+                        <a
+                            href="/"
+                            className="button about__button button-flex"
+                        >
                             <MainBtn {...aboutBtn} />
                         </a>
                     </motion.div>

@@ -38,22 +38,23 @@ img {
 
 .section {
     padding: 2rem 0 4rem;
+
+    &__title {
+        font-size: $fs-h1;
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: $fs-sm;
+        margin-bottom: $mb-30;
+    }
+
+    &__title,
+    &__subtitle {
+        text-align: center;
+    }
 }
 
-.section__title {
-    font-size: $fs-h1;
-}
-
-.section__subtitle {
-    display: block;
-    font-size: $fs-sm;
-    margin-bottom: $mb-30;
-}
-
-.section__title,
-.section__subtitle {
-    text-align: center;
-}
 
 .container {
     max-width: 768px;
@@ -71,13 +72,13 @@ img {
     width: 0.8rem;
     background-color: $clr-scroll-bar;
     border-radius: 0.5rem;
-}
 
-::-webkit-scrollbar-thumb {
-    background-color: $clr-scroll-thumb;
-    border-radius: 0.5rem;
+    &-thumb {
+        background-color: $clr-scroll-thumb;
+        border-radius: 0.5rem;
 
-    &:hover {
-        background-color: $clr-txt-light;
+        &:hover {
+            background-color: $clr-txt-light;
+        }
     }
 }
