@@ -46,20 +46,6 @@ function QualificationBtn({ name, icon }) {
     );
 }
 
-function ServiceBtn({ props }) {
-    const { serviceBtn, handleModal } = props;
-
-    return (
-        <span
-            className="button button-flex button-small button-link services__button"
-            onClick={() => handleModal()}
-        >
-            {serviceBtn.name}
-            <FontAwesomeIcon icon={serviceBtn.icon} className="button__icon" />
-        </span>
-    );
-}
-
 function PortfolioBtn({ props }) {
     const { icons, content } = props;
 
@@ -133,7 +119,6 @@ export {
     MainBtn,
     SocialsBtn,
     ScrollDownBtn,
-    ServiceBtn,
     PortfolioBtn,
     SocialsFooterBtn,
     ScrollUpBtn,

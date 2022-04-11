@@ -8,18 +8,14 @@
 @use "layouts/footer";
 @use "layouts/header";
 @use "layouts/nav";
-@use "layouts/forms";
 
 /* COMPONENTS */
 
 @use "components/buttons";
 @use "components/intro";
-@use "components/main";
 @use "components/skills";
 @use "components/qualification";
-@use "components/service";
 @use "components/portfolioSlider";
-@use "components/darkMode";
 
 /* PAGES */
 
