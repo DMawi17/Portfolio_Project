@@ -1,4 +1,4 @@
-@use "../utils/"as *;
+@use "../utils/" as *;
 
 // GENERAL BUTTONS
 .button {
@@ -67,7 +67,6 @@
             transform: translateX(0.25rem) translateY(-0.25rem);
         }
     }
-
 }
 
 .form__button:active {
@@ -178,5 +177,37 @@
     &__icon {
         font-size: 1.5rem;
         color: #fff;
+    }
+}
+
+/* Whoops button */
+.whoops__button {
+    margin: $mb-10 0 $mb-20;
+    box-shadow: $bsh-reg;
+
+    .whoops__icon {
+        margin-right: $mb-025;
+    }
+
+    &:hover {
+        .button__icon {
+            transform: translateX(-0.25rem);
+        }
+    }
+}
+
+/* Thanks button */
+.thanks__button {
+    margin: $mb-10 0 $mb-20;
+    box-shadow: $bsh-reg;
+
+    .thanks__icon {
+        margin-right: $mb-025;
+    }
+
+    &:hover {
+        .button__icon {
+            transform: translateX(-0.25rem);
+        }
     }
 }
