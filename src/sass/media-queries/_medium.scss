@@ -220,4 +220,14 @@
             margin-top: 4.5rem;
         }
     }
+
+    .whoops {
+        height: calc(100vh - $mb-20);
+
+        h2 {
+            text-align: center;
+            color: $clr-txt-light;
+            font-size: $fs-body;
+        }
+    }
 }

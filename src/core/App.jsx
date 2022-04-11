@@ -1,15 +1,16 @@
-import Header from "../layout/Header";
-import Main from "../layout/Main";
-import Footer from "../layout/Footer";
-import { ScrollUpBtn } from "../components/Buttons";
+import { Routes, Route } from "react-router-dom";
+import Whoops404 from "../pages/Whoops404";
+import Home from "./Home";
 
 function App() {
     return (
-        <div className="dark">
-            <Header />
-            <Main />
-            <Footer />
-            <ScrollUpBtn />
+        <div className="app">
+            <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route  path="*" element={<Whoops404 />} />
+            </Routes>
+
+            {/* <Home /> */}
         </div>
     );
 }

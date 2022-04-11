@@ -6,7 +6,7 @@ import colors from "../sass/utils/_colors.scss";
 
 import { useData } from "../contexts/data-hooks";
 
-function Home() {
+function LandingPage() {
     const { buttons } = useData();
     const { scrollDwnBtn } = buttons;
 
@@ -24,4 +24,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default LandingPage;

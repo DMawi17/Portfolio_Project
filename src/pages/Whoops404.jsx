@@ -4,11 +4,8 @@ const Whoops404 = () => {
     const location = useLocation();
 
     return (
-        <div id="Whoops">
-            <h2>
-                <span>Whoops!</span> <br />
-                Resource not found at {location.pathname}
-            </h2>
+        <div className="whoops">
+            <h2>Resource not found at {location.pathname}</h2>
         </div>
     );
 };
