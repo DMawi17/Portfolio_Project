@@ -25,20 +25,29 @@ function Form({ paperPlane }) {
     }, [animation, inView]);
 
     return (
-        <form action="" className="contact__form grid">
+        <form
+            name="contact"
+            method="POST"
+            data-netlify="true"
+            className="contact__form grid"
+        >
             <div className="contact_inputs grid">
                 <div className="contact__content">
                     <label htmlFor="" className="contact__label">
                         Name
                     </label>
-                    <input type="text" className="contact__input" />
+                    <input type="text" name="name" className="contact__input" />
                 </div>
 
                 <div className="contact__content">
                     <label htmlFor="" className="contact__label">
                         Email
                     </label>
-                    <input type="email" className="contact__input" />
+                    <input
+                        type="email"
+                        name="email"
+                        className="contact__input"
+                    />
                 </div>
             </div>
 
@@ -47,8 +56,7 @@ function Form({ paperPlane }) {
                     Message
                 </label>
                 <textarea
-                    name=""
-                    id=""
+                    name="message"
                     cols="0"
                     rows="6"
                     className="contact__input"
@@ -61,13 +69,16 @@ function Form({ paperPlane }) {
                     opacity: 0,
                 }}
             >
-                <a href="#contact" className="button button-flex form__button">
+                <button
+                    type="submit"
+                    className="button button-flex form__button"
+                >
                     Send Message
                     <FontAwesomeIcon
                         icon={paperPlane}
                         className="button__icon"
                     />
-                </a>
+                </button>
             </motion.div>
         </form>
     );

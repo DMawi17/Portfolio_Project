@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 // GENERAL BUTTONS
 .button {
@@ -61,6 +61,8 @@
 .intro__button,
 .form__button {
     box-shadow: $bsh-reg;
+    cursor: pointer;
+
     &:hover {
         .button__icon {
             transform: translateX(0.25rem) translateY(-0.25rem);
