@@ -1,6 +1,7 @@
 @use "../utils/"as *;
 
 @media (min-width: 568px) {
+
     .home {
         &__content {
             grid-template-columns: max-content 1fr 1fr;
@@ -76,6 +77,42 @@
     .nav {
         height: calc($header-height + 1.5rem);
         column-gap: 2.5rem;
+
+        /* Animating logo */
+        &__logo {
+
+            animation: animate 5s linear infinite;
+            color: $clr-bg-light;
+
+
+            @keyframes animate {
+                0% {
+                    -ms-transform: rotateY(0deg);
+                    -moz-transform: rotateY(0deg);
+                    -webkit-transform: rotateY(0deg);
+                    -o-transform: rotateY(0deg);
+                    transform: rotateY(0deg);
+                }
+
+                50% {
+                    -ms-transform: rotateY(90deg);
+                    -moz-transform: rotateY(90deg);
+                    -webkit-transform: rotateY(90deg);
+                    -o-transform: rotateY(90deg);
+                    transform: rotateY(90deg);
+
+                }
+
+                100% {
+                    -ms-transform: rotateY(0deg);
+                    -moz-transform: rotateY(0deg);
+                    -webkit-transform: rotateY(0deg);
+                    -o-transform: rotateY(0deg);
+                    transform: rotateY(0deg);
+
+                }
+            }
+        }
 
         &__icon,
         &__close,
