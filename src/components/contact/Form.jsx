@@ -34,6 +34,7 @@ function Form({ paperPlane }) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        setFormValues(initialValues);
     };
 
     return (
