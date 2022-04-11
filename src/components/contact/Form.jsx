@@ -1,12 +1,9 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Form({ paperPlane }) {
-    const initialValues = { name: "", email: "", message: "" };
-    const [formValues, setFormValues] = useState(initialValues);
-
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.5,
@@ -27,23 +24,12 @@ function Form({ paperPlane }) {
         }
     }, [animation, inView]);
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormValues({ ...formValues, [name]: value });
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        setFormValues(initialValues);
-    };
-
     return (
         <form
             name="contact"
             method="POST"
             data-netlify="true"
             className="contact__form grid"
-            onSubmit={handleSubmit}
         >
             <input type="hidden" name="form-name" value="contact" />
             <div className="contact_inputs grid">
@@ -54,9 +40,8 @@ function Form({ paperPlane }) {
                     <input
                         type="text"
                         name="name"
-                        value={formValues.name}
                         className="contact__input"
-                        onChange={handleChange}
+                        required
                     />
                 </div>
 
@@ -67,9 +52,8 @@ function Form({ paperPlane }) {
                     <input
                         type="email"
                         name="email"
-                        value={formValues.email}
                         className="contact__input"
-                        onChange={handleChange}
+                        required
                     />
                 </div>
             </div>
@@ -80,11 +64,10 @@ function Form({ paperPlane }) {
                 </label>
                 <textarea
                     name="message"
-                    value={formValues.message}
                     cols="0"
                     rows="6"
                     className="contact__input"
-                    onChange={handleChange}
+                    required
                 ></textarea>
             </div>
             <motion.div
