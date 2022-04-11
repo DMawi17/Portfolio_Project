@@ -31,6 +31,7 @@ function Form({ paperPlane }) {
             data-netlify="true"
             className="contact__form grid"
         >
+            <input type="hidden" name="form-name" value="contact" />
             <div className="contact_inputs grid">
                 <div className="contact__content">
                     <label htmlFor="" className="contact__label">
