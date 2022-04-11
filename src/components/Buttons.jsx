@@ -114,6 +114,30 @@ function ScrollUpBtn() {
     );
 }
 
+function WhoopsBtn({ name, icon }) {
+    return (
+        <>
+            <FontAwesomeIcon
+                icon={icon}
+                className="button__icon whoops__icon"
+            />
+            {name}
+        </>
+    );
+}
+
+function ThanksBtn({ name, icon }) {
+    return (
+        <>
+            <FontAwesomeIcon
+                icon={icon}
+                className="button__icon thanks__icon"
+            />
+            {name}
+        </>
+    );
+}
+
 export {
     QualificationBtn,
     MainBtn,
@@ -122,4 +146,6 @@ export {
     PortfolioBtn,
     SocialsFooterBtn,
     ScrollUpBtn,
+    WhoopsBtn,
+    ThanksBtn,
 };

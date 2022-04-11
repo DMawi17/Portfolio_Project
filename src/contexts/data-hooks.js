@@ -124,6 +124,11 @@ export const DataProvider = ({ children }) => {
                 icon: icons.location,
             },
         ],
+
+        whoops404Btn: {
+            name: "Back to our site",
+            icon: icons.angleLft,
+        },
     };
 
     return (
@@ -133,7 +138,6 @@ export const DataProvider = ({ children }) => {
                 about,
                 skills,
                 qualification,
-                service,
                 portfolio,
                 contact,
                 footer,
