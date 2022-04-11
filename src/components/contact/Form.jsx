@@ -1,9 +1,14 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Form({ paperPlane }) {
+    const initialValues = { name: "", email: "", message: "" };
+    const [formValues, setFormValues] = useState(initialValues);
+
+    console.log(formValues);
+
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.5,
@@ -24,12 +29,23 @@ function Form({ paperPlane }) {
         }
     }, [animation, inView]);
 
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormValues({ ...formValues, [name]: value });
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setFormValues(initialValues);
+    };
+
     return (
         <form
             name="contact"
             method="POST"
             data-netlify="true"
             className="contact__form grid"
+            onSubmit={handleSubmit}
         >
             <input type="hidden" name="form-name" value="contact" />
             <div className="contact_inputs grid">
@@ -37,7 +53,13 @@ function Form({ paperPlane }) {
                     <label htmlFor="" className="contact__label">
                         Name
                     </label>
-                    <input type="text" name="name" className="contact__input" />
+                    <input
+                        type="text"
+                        name="name"
+                        value={formValues.name}
+                        className="contact__input"
+                        onChange={handleChange}
+                    />
                 </div>
 
                 <div className="contact__content">
@@ -47,7 +69,9 @@ function Form({ paperPlane }) {
                     <input
                         type="email"
                         name="email"
+                        value={formValues.email}
                         className="contact__input"
+                        onChange={handleChange}
                     />
                 </div>
             </div>
@@ -58,9 +82,11 @@ function Form({ paperPlane }) {
                 </label>
                 <textarea
                     name="message"
+                    value={formValues.message}
                     cols="0"
                     rows="6"
                     className="contact__input"
+                    onChange={handleChange}
                 ></textarea>
             </div>
             <motion.div
