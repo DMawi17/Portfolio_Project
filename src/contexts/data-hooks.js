@@ -7,16 +7,8 @@ export const useData = () => useContext(DataContext);
 
 export const DataProvider = ({ children }) => {
     const [data] = useState(rowData);
-    const {
-        intro,
-        about,
-        skills,
-        qualification,
-        service,
-        portfolio,
-        contact,
-        footer,
-    } = data;
+    const { intro, about, skills, qualification, portfolio, contact, footer } =
+        data;
 
     const icons = {
         user: solid("user"),
