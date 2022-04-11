@@ -180,11 +180,28 @@
     }
 }
 
+/* Whoops button */
 .whoops__button {
     margin: $mb-10 0 $mb-20;
     box-shadow: $bsh-reg;
 
     .whoops__icon {
+        margin-right: $mb-025;
+    }
+
+    &:hover {
+        .button__icon {
+            transform: translateX(-0.25rem);
+        }
+    }
+}
+
+/* Thanks button */
+.thanks__button {
+    margin: $mb-10 0 $mb-20;
+    box-shadow: $bsh-reg;
+
+    .thanks__icon {
         margin-right: $mb-025;
     }
 

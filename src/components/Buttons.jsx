@@ -126,6 +126,18 @@ function WhoopsBtn({ name, icon }) {
     );
 }
 
+function ThanksBtn({ name, icon }) {
+    return (
+        <>
+            <FontAwesomeIcon
+                icon={icon}
+                className="button__icon thanks__icon"
+            />
+            {name}
+        </>
+    );
+}
+
 export {
     QualificationBtn,
     MainBtn,
@@ -135,4 +147,5 @@ export {
     SocialsFooterBtn,
     ScrollUpBtn,
     WhoopsBtn,
+    ThanksBtn,
 };
