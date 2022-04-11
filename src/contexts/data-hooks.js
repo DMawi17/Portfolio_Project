@@ -18,7 +18,6 @@ export const DataProvider = ({ children }) => {
         footer,
     } = data;
 
-    // Icons:
     const icons = {
         user: solid("user"),
         house: solid("house-chimney"),
@@ -126,8 +125,6 @@ export const DataProvider = ({ children }) => {
             },
         ],
     };
-
-    /* ...................................................................... */
 
     return (
         <DataContext.Provider

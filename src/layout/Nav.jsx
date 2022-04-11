@@ -39,7 +39,6 @@ function Navigation() {
             </div>
 
             <div className="nav__btn">
-                {/* <DarkMode /> TODO: */}
                 <div
                     className="nav__toggle"
                     id="nav_toggle"
