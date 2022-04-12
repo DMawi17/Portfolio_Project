@@ -26,7 +26,6 @@ function Form({ paperPlane }) {
 
     return (
         <form
-            action="/ThankYou"
             name="contact"
             method="POST"
             data-netlify="true"
