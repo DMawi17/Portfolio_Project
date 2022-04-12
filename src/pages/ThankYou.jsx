@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ThanksBtn } from "../components/Buttons";
 import { useData } from "../contexts/data-hooks";
 
-const Whoops404 = () => {
+function Form() {
     const { buttons } = useData();
     const { whoops404Btn } = buttons;
 
@@ -25,6 +25,6 @@ const Whoops404 = () => {
             </div>
         </div>
     );
-};
+}
 
-export default Whoops404;
+export default Form;
