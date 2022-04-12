@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import Whoops404 from "../components/contact/Whoops404";
-import ThankYou from "../components/contact/ThankYou";
+import ThankYou from "../components/contact/thankyou";
 import Home from "./Home";
 
 function App() {
