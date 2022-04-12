@@ -1,9 +1,7 @@
 import Socials from "../components/Socials";
 import Intro from "../components/Intro";
-import Blob from "../svgComponents/Blob";
 import { ScrollDownBtn } from "../components/Buttons";
-import colors from "../sass/utils/_colors.scss";
-
+import IntroSvg from '../assets/svg/intro.svg'
 import { useData } from "../contexts/data-hooks";
 
 function LandingPage() {
@@ -15,7 +13,7 @@ function LandingPage() {
             <div className="home__container container grid">
                 <div className="home__content grid">
                     <Socials />
-                    <Blob fill={colors.clrPrimary} />
+                    <img src={IntroSvg} alt="" />
                     <Intro />
                 </div>
                 <ScrollDownBtn {...scrollDwnBtn} />

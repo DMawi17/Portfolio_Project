@@ -3,13 +3,13 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { v4 } from "uuid";
 import { useData } from "../contexts/data-hooks";
-import AboutImg from "../svgComponents/AboutImg";
-import colors from "../sass/utils/_colors.scss";
+import AboutSvg from "../assets/svg/about.svg";
 import MainTitle from "../components/titles/MainTitle";
 import { MainBtn } from "../components/Buttons";
 
 function About() {
     const { buttons, about } = useData();
+
     const [ref, inView] = useInView({
         triggerOnce: true,
         threshold: 0.5,
@@ -48,7 +48,7 @@ function About() {
             <MainTitle {...about_title} />
 
             <div className="about__container container grid">
-                <AboutImg fill={colors.clrTertiary} />
+                <img src={AboutSvg} alt="3D character using computer" />
 
                 <div className="about__data">
                     <motion.p
