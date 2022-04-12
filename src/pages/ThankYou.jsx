@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { ThanksBtn } from "../../Buttons";
-import { useData } from "../../../contexts/data-hooks";
+import { ThanksBtn } from "../components/Buttons";
+import { useData } from "../contexts/data-hooks";
 
 function ThankYou() {
     const { buttons } = useData();

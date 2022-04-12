@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
-import { WhoopsBtn } from "../Buttons";
-import { useData } from "../../contexts/data-hooks";
+import { WhoopsBtn } from "../components/Buttons";
+import { useData } from "../contexts/data-hooks";
 
 const Whoops404 = () => {
     const location = useLocation();
