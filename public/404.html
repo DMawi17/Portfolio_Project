@@ -11,22 +11,35 @@
                 top: 40%;
                 right: 50%;
                 transform: translate(50%, -50%);
+                color: grey;
+            }
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.816);
+            }
+
+            a:hover {
+                color: grey;
             }
         </style>
     </head>
 
     <body>
         <div>
-            <h3>Resource not found</h3>
+            <h2>Resource not found</h2>
             <p>
                 Looks like you've followed a broken link or entered a URL that
                 doesn't exist on this site.
             </p>
             <a
-                href="https://www.mawi.me"
-                className="button button-flex button-small whoops__button"
+                href="#"
+                onClick="history.go(-1)"
+                className="button button-flex
+                button-small whoops__button"
             >
-                Back to our site.
+                <h3>< Back to our site.</h3>
             </a>
         </div>
     </body>
