@@ -1,6 +1,8 @@
 @use "../utils/"as *;
 
 .contact {
+    // position: relative;
+
     &__container {
         row-gap: 3rem;
     }
@@ -48,7 +50,17 @@
         border: none;
         outline: none;
         padding: 0.25rem 0.5rem 0.5rem 0;
+    }
 
+    &__form {
+        position: relative;
+    }
+
+    .thankyou {
+        position: absolute;
+        top: -45px;
+        margin: 0 $mb-075;
+        color: $clr-primary;
     }
 
     .error__msg {
