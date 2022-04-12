@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 .contact {
     // position: relative;
@@ -61,5 +61,9 @@
         top: -45px;
         margin: 0 $mb-075;
         color: $clr-primary;
+    }
+
+    .error__msg {
+        color: red;
     }
 }
