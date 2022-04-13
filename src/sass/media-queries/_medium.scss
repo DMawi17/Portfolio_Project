@@ -177,6 +177,16 @@
     }
 
     .qualification {
+
+        &__mainTitle {
+            border: 2px solid transparent; // FIXME:
+
+            background-image: url(../../assets/img/edu.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+
         &__tabs {
             justify-content: space-around;
         }
