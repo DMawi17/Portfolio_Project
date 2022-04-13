@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { v4 } from "uuid";
 import { useData } from "../contexts/data-hooks";
-import AboutSvg from "../assets/img/about.svg";
+import AboutSvg from "../assets/img/about_3d.png";
 import MainTitle from "../components/titles/MainTitle";
 import { MainBtn } from "../components/Buttons";
 
@@ -49,7 +49,7 @@ function About() {
 
             <div className="about__container container grid">
                 <div className="about__img">
-                    <img src={AboutSvg} alt="3D character using computer" className="about__blob" />
+                    <img src={AboutSvg} alt="3D character using computer" className="about__img-file" />
                 </div>
 
                 <div className="about__data">

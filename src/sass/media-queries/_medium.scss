@@ -146,7 +146,7 @@
             column-gap: 2rem;
         }
 
-        &__blob {
+        &__img-file {
             width: 270px;
         }
 
@@ -162,6 +162,10 @@
 
         &__img {
             width: 350px;
+
+            img {
+                max-width: none;
+            }
         }
 
         &__description {
@@ -178,7 +182,7 @@
     }
 
     .qualification {
-        background-image: url(../../assets/img/edu.png);
+        background-image: url(../../assets/img/education_3d.png);
         background-size: 20%;
         background-repeat: no-repeat;
         background-position: 95% 10%;
@@ -203,7 +207,7 @@
     }
 
     .contact {
-        background-image: url(../../assets/img/message.png);
+        background-image: url(../../assets/img/message_3d.png);
         background-size: 15%;
         background-repeat: no-repeat;
         background-position: 20% 5%;
