@@ -35,7 +35,7 @@ function About() {
     const renderAboutList = ([num, time, keyword]) => {
         return (
             <div key={v4()}>
-                <span className="about__info-title">{num}+</span>
+                <span className="about__info-title">{num}</span>
                 <span className="about__info-name">
                     {time} <br /> {keyword}{" "}
                 </span>
