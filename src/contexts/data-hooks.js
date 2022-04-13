@@ -104,16 +104,16 @@ export const DataProvider = ({ children }) => {
         },
 
         contactBtn: [
-            { title: "Call Me", address: "+49 15168541398", icon: icons.phone },
+            { title: "Call Me", address: "+49 15168541398", icon: icons.phone, url: "images/phone.svg" },
             {
                 title: "Email",
                 address: "contact@mawi.me",
-                icon: icons.envelope,
+                icon: icons.envelope, url: "images/email.svg"
             },
             {
                 title: "Address",
                 address: "70771 Leinfelden-Echterdingen",
-                icon: icons.location,
+                icon: icons.location, url: "images/map.svg"
             },
         ],
 

@@ -13,9 +13,10 @@ function Qualification() {
 
     return (
         <section className="qualification section">
-            <MainTitle {...qualification_title} />
-
             <div className="qualification__container container">
+                <div className="qualification__mainTitle">
+                    <MainTitle {...qualification_title} />
+                </div>
                 <div className="qualification__tabs">
                     {qualificationBtn.map((el) => (
                         <QualificationBtn key={v4()} {...el} /> // FIXME:
