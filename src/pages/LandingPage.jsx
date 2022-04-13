@@ -16,7 +16,6 @@ function LandingPage() {
                     <div className="home__img">
                         <img src={IntroSvg} alt="A 3D character waving hand" className="home__blob" />
                     </div>
-                    
                     <Intro />
                 </div>
                 <ScrollDownBtn {...scrollDwnBtn} />
