@@ -107,8 +107,8 @@ export const DataProvider = ({ children }) => {
             { title: "Call Me", address: "+49 15168541398", icon: icons.phone, url: "images/phone.svg" },
             {
                 title: "Email",
-                address: "contact@mawi.me",
-                icon: icons.envelope, url: "images/email.svg"
+                address: "asegda17@gamil.com",
+                icon: icons.envelope,
             },
             {
                 title: "Address",

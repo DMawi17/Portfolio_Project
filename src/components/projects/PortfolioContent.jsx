@@ -2,7 +2,7 @@ import { PortfolioBtn } from "../Buttons";
 
 function PortfolioContent({ props }) {
     const { content, icons } = props;
-    const { title, description, img_url } = content;
+    const { title, description, img_url, link } = content;
 
     return (
         <div className="portfolio__content grid">
@@ -10,7 +10,7 @@ function PortfolioContent({ props }) {
             <div className="portfolio__data">
                 <h3 className="portfolio__title">{title}</h3>
                 <p>{description}</p>
-                <PortfolioBtn props={{ icons, content }} />
+                <PortfolioBtn props={{ icons, content, link }} />
             </div>
         </div>
     );

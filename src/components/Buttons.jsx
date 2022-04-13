@@ -47,12 +47,13 @@ function QualificationBtn({ name, icon }) {
 }
 
 function PortfolioBtn({ props }) {
-    const { icons, content } = props;
+    const { icons, content, link } = props;
 
     return (
         <a
-            href="/"
-            className="button button-flex button-small portfolio__button"
+            href={link}
+            target="_blank"
+            className="button button-flex button-small portfolio__button" rel="noreferrer"
         >
             {content.BtnName}
             <FontAwesomeIcon icon={icons.arrowRgt} className="button__icon" />

@@ -20,7 +20,7 @@
 
         "about_content": {
             "experience": ["03", "Month", "experience"],
-            "projects": ["05", "Completed", "project"],
+            "projects": ["03", "Completed", "project"],
             "companies": ["01", "Company", "worked"]
         }
     },
@@ -108,19 +108,29 @@
                 "title": "Movie Website",
                 "description": "A website influenced by Netflix with animated interaction.",
                 "BtnName": "Demo",
-                "img_url": "images/movie.png"
+                "img_url": "images/movie.png",
+                "link": "https://spa-movie-flix.netlify.app/home"
             },
             {
                 "title": "Admin Dashboard",
                 "description": "An admin dashboard site with graphical representation.",
                 "BtnName": "Demo",
-                "img_url": "images/admin.png"
+                "img_url": "images/admin.png",
+                "link": "https://admindashboard-444e3.web.app"
             },
             {
                 "title": "Music Streaming Website",
                 "description": "A music streaming site to listen to and share music",
                 "BtnName": "Demo",
-                "img_url": "images/sound.png"
+                "img_url": "images/sound.png",
+                "link": "https://landing-page-for-music-site.netlify.app"
+            },
+            {
+                "title": "Color organizer",
+                "description": "My first React app. Add, rate, and delete your favorite colors.",
+                "BtnName": "Demo",
+                "img_url": "images/colors.png",
+                "link": "https://color-organiser.netlify.app"
             }
         ]
     },
