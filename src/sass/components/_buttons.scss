@@ -3,7 +3,6 @@
 // GENERAL BUTTONS
 .button {
     display: inline-block;
-    // background-color: $clr-primary;
     background-color: $clr-primary-hover;
     color: #fff;
     padding: 1rem;
@@ -50,12 +49,10 @@
 
     &-icon {
         font-size: 1.2rem;
-        // color: $clr-primary;
         color: $clr-icon;
     }
 
     &-icon:hover {
-        // color: $clr-tertiary;
         color: $clr-icon-hover;
     }
 }
@@ -86,9 +83,6 @@
         border-radius: 3rem;
         transition: 0.3s;
         box-shadow: $bsh-light;
-        // color: $clr-primary;
-        // background-color: $clr-input;
-        // background-color: $clr-bg-icon;
         color: $clr-icon-secondary;
     }
 
@@ -175,7 +169,6 @@
     box-shadow: $bsh-reg;
 
     &:hover {
-        // background-color: $clr-tertiary;
         background-color: $clr-tertiary;
         cursor: pointer;
     }

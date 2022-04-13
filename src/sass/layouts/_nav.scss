@@ -14,7 +14,7 @@
 
 
         &:hover {
-            color: $clr-primary;
+            color: $clr-icon-tertiary;
         }
     }
 
@@ -29,7 +29,6 @@
 
     &__logo,
     &__toggle {
-        color: $clr-txt;
         font-weight: $fw-reg;
     }
 
@@ -49,14 +48,11 @@
         &:hover {
             color: $clr-primary;
         }
+
     }
 
     &__icon {
         font-size: 1.2rem;
-    }
-
-    .main__icon {
-        font-size: 1.6rem;
     }
 
     &__close {
@@ -71,6 +67,11 @@
             color: $clr-tertiary;
         }
     }
+
+    .main__icon {
+        font-size: 1.6rem;
+    }
+
 }
 
 @media (max-width: 767px) {
