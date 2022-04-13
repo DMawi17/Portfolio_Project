@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ThanksBtn } from "../components/Buttons";
 import { useData } from "../contexts/data-hooks";
 
-function Form() {
+function ThankYou() {
     const { buttons } = useData();
     const { whoops404Btn } = buttons;
 
@@ -27,4 +27,4 @@ function Form() {
     );
 }
 
-export default Form;
+export default ThankYou;
