@@ -1,4 +1,4 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 .skills_container {
     row-gap: 0;
@@ -14,16 +14,13 @@
 .skills__icon,
 .skills__arrow {
     font-size: 1.5rem;
-    color: $clr-primary;
+    // color: $clr-primary;
+    color: $clr-icon-secondary;
 }
 
 .skills__arrow {
     cursor: pointer;
 }
-
-// .skills__icon {
-//     margin-right: $mb-075;
-// }
 
 .skills__title {
     font-style: $fs-h3;
@@ -71,6 +68,7 @@
 .skills__html {
     width: 90%;
 }
+
 .skills__css {
     width: 80%;
 }

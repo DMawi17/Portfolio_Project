@@ -15,8 +15,9 @@
 
     &__icon {
         font-size: 2rem;
-        color: $clr-primary;
         margin-right: $mb-075;
+        // color: $clr-primary;
+        color: $clr-icon-hover;
     }
 
     &__title {

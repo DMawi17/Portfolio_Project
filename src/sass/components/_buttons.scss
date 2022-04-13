@@ -1,9 +1,10 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 // GENERAL BUTTONS
 .button {
     display: inline-block;
-    background-color: $clr-primary;
+    // background-color: $clr-primary;
+    background-color: $clr-primary-hover;
     color: #fff;
     padding: 1rem;
     border-radius: 0.6rem;
@@ -49,11 +50,13 @@
 
     &-icon {
         font-size: 1.2rem;
-        color: $clr-primary;
+        // color: $clr-primary;
+        color: $clr-icon;
     }
 
     &-icon:hover {
-        color: $clr-tertiary;
+        // color: $clr-tertiary;
+        color: $clr-icon-hover;
     }
 }
 
@@ -81,10 +84,12 @@
         width: 2rem;
         height: 3rem;
         border-radius: 3rem;
-        color: $clr-primary;
         transition: 0.3s;
-        background-color: $clr-input;
         box-shadow: $bsh-light;
+        // color: $clr-primary;
+        // background-color: $clr-input;
+        // background-color: $clr-bg-icon;
+        color: $clr-icon-secondary;
     }
 
     &-button:hover {
@@ -170,6 +175,7 @@
     box-shadow: $bsh-reg;
 
     &:hover {
+        // background-color: $clr-tertiary;
         background-color: $clr-tertiary;
         cursor: pointer;
     }

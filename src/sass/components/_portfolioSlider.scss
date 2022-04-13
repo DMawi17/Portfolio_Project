@@ -14,7 +14,8 @@
 
         &-prev,
         &-next {
-            color: $clr-primary;
+            // color: $clr-primary;
+            color: $clr-icon-secondary;
             border-radius: 0.25rem;
             transition: 0.3s;
             top: 35%;
