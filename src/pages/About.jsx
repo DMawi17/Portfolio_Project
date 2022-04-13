@@ -80,7 +80,8 @@ function About() {
                         }}
                     >
                         <a
-                            href="/"
+                            href="./doc/Dagmawi_Asegid_CV.pdf"
+                            download
                             className="button about__button button-flex"
                         >
                             <MainBtn {...aboutBtn} />
