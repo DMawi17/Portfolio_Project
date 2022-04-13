@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { v4 } from "uuid";
 import { useData } from "../contexts/data-hooks";
-import AboutSvg from "../assets/svg/about.svg";
+import AboutSvg from "../assets/img/about.svg";
 import MainTitle from "../components/titles/MainTitle";
 import { MainBtn } from "../components/Buttons";
 

@@ -1,7 +1,7 @@
 import Socials from "../components/Socials";
 import Intro from "../components/Intro";
 import { ScrollDownBtn } from "../components/Buttons";
-import IntroSvg from '../assets/svg/intro.svg'
+import IntroSvg from '../assets/img/intro.svg'
 import { useData } from "../contexts/data-hooks";
 
 function LandingPage() {
