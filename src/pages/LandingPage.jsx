@@ -13,7 +13,10 @@ function LandingPage() {
             <div className="home__container container grid">
                 <div className="home__content grid">
                     <Socials />
-                    <img src={IntroSvg} alt="" />
+                    <div className="home__img">
+                        <img src={IntroSvg} alt="A 3D character waving hand" className="home__blob" />
+                    </div>
+                    
                     <Intro />
                 </div>
                 <ScrollDownBtn {...scrollDwnBtn} />

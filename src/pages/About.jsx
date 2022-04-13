@@ -48,7 +48,9 @@ function About() {
             <MainTitle {...about_title} />
 
             <div className="about__container container grid">
-                <img src={AboutSvg} alt="3D character using computer" />
+                <div className="about__img">
+                    <img src={AboutSvg} alt="3D character using computer" className="about__blob" />
+                </div>
 
                 <div className="about__data">
                     <motion.p
