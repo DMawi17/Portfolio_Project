@@ -79,11 +79,12 @@
 
         /* Animating logo */
         &__logo {
-
             animation: animate 5s linear infinite;
             color: $clr-icon-secondary;
 
-
+            &:hover {
+                color: $clr-icon-tertiary;
+            }
 
             @keyframes animate {
                 0% {
