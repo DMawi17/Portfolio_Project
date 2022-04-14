@@ -8,15 +8,14 @@
 
     &__content {
         align-items: center;
-        margin: 2rem 0;
+        margin: 2rem .5rem;
     }
 
     &__img {
         width: 225px;
         border-radius: 0.5rem;
         justify-self: center;
-        border: 1px solid #eee;
-        box-shadow: $bsh-light;
+        box-shadow: $bsh-reg-light;
     }
 
     &__title {
