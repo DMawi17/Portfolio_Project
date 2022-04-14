@@ -1,3 +1,4 @@
+
 import Qualification from "../components/qualification/Qualification";
 import Skills from "../components/skills/Skills";
 import About from "../pages/About";
@@ -7,15 +8,16 @@ import Portfolio from "../pages/Portfolio";
 
 function Main() {
     return (
-        <div className="main">
+        <main className="main">
             <LandingPage />
             <About />
             <Skills />
             <Qualification />
             <Portfolio />
             <Contact />
-        </div>
+        </main>
     );
 }
 
 export default Main;
+

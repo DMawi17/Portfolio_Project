@@ -109,7 +109,7 @@
                 "description": "A website influenced by Netflix with animated interaction.",
                 "BtnName": "Demo",
                 "img_url": "images/movie.png",
-                "link": "https://spa-movie-flix.netlify.app/home"
+                "link": "https://spa-movie-flix.netlify.app"
             },
             {
                 "title": "Admin Dashboard",

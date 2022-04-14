@@ -36,39 +36,39 @@ function Form({ paperPlane }) {
                 <div className="contact__content">
                     <label htmlFor="" className="contact__label">
                         Name
+                        <input
+                            type="text"
+                            name="name"
+                            className="contact__input"
+                            required
+                        />
                     </label>
-                    <input
-                        type="text"
-                        name="name"
-                        className="contact__input"
-                        required
-                    />
                 </div>
 
                 <div className="contact__content">
                     <label htmlFor="" className="contact__label">
                         Email
+                        <input
+                            type="email"
+                            name="email"
+                            className="contact__input"
+                            required
+                        />
                     </label>
-                    <input
-                        type="email"
-                        name="email"
-                        className="contact__input"
-                        required
-                    />
                 </div>
             </div>
 
             <div ref={ref} className="contact__content">
                 <label htmlFor="" className="contact__label">
                     Message
+                    <textarea
+                        name="message"
+                        cols="0"
+                        rows="6"
+                        className="contact__input"
+                        required
+                    ></textarea>
                 </label>
-                <textarea
-                    name="message"
-                    cols="0"
-                    rows="6"
-                    className="contact__input"
-                    required
-                ></textarea>
             </div>
             <motion.div
                 animate={animation}
