@@ -35,7 +35,10 @@ function Footer() {
                     </div>
                 </div>
 
-                <p className="footer__copy">&#169;2022 Dagmawi Asegid</p>
+                <p className="footer__copy">&#169;2022 Dagmawi Asegid <br />
+                    Illustration by <a href="https://icons8.com/illustrations/author/zD2oqC8lLBBA">Icons 8</a> from <a href="https://icons8.com/illustrations">Ouch!</a>
+                </p>
+
             </div>
         </footer>
     );
