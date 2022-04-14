@@ -7,14 +7,14 @@ import Portfolio from "../pages/Portfolio";
 
 function Main() {
     return (
-        <div className="main">
+        <main className="main">
             <LandingPage />
             <About />
             <Skills />
             <Qualification />
             <Portfolio />
             <Contact />
-        </div>
+        </main>
     );
 }
 

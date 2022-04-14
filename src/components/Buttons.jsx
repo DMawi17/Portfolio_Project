@@ -6,6 +6,7 @@ function SocialsBtn({ url, icon }) {
     return (
         <a
             href={url}
+            aria-label="social media link"
             target="_blank"
             className="home__social-icon"
             rel="noreferrer"
@@ -66,6 +67,7 @@ function SocialsFooterBtn({ url, icon }) {
         <a
             href={url}
             target="_blank"
+            aria-label="social media link"
             className="footer__social"
             rel="noreferrer"
         >
