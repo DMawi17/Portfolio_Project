@@ -1,3 +1,4 @@
+
 import Qualification from "../components/qualification/Qualification";
 import Skills from "../components/skills/Skills";
 import About from "../pages/About";
@@ -19,3 +20,4 @@ function Main() {
 }
 
 export default Main;
+
