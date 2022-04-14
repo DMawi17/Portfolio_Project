@@ -44,6 +44,10 @@
         text-align: center;
         color: $clr-txt-light;
         margin-top: $mb-30;
+
+        a {
+            color: inherit;
+        }
     }
 
     &__title,

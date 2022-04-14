@@ -19,14 +19,14 @@ function Intro() {
                 {intro_title.title}
             </motion.h1>
 
-            <motion.h3
+            <motion.h2
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
                 className="intro__subtitle"
             >
                 {intro_title.subtitle}
-            </motion.h3>
+            </motion.h2>
             <motion.p
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

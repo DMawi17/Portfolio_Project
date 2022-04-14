@@ -16,7 +16,7 @@ function Navigation() {
     };
 
     return (
-        <div className="nav container">
+        <nav className="nav container">
             <a href="#home" className="nav__logo">
                 DagmawiAsegid
             </a>
@@ -47,7 +47,7 @@ function Navigation() {
                     <FontAwesomeIcon className="main__icon" icon={bars} />
                 </div>
             </div>
-        </div>
+        </nav>
     );
 }
 
