@@ -12,6 +12,8 @@ export default function PortfolioSlider({ props }) {
     const { portfolio, icons } = props;
     const { portfolio_title, portfolio_content } = portfolio;
 
+    console.log(portfolio)
+
     return (
         <>
             <Swiper
