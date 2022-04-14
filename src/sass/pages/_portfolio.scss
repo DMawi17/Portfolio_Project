@@ -8,7 +8,7 @@
 
     &__content {
         align-items: center;
-        margin: 2rem 0;
+        margin: 2rem .5rem;
     }
 
     &__img {
@@ -16,6 +16,7 @@
         height: 200px;
         border-radius: 0.5rem;
         justify-self: center;
+        box-shadow: $bsh-reg-light;
     }
 
     &__title {

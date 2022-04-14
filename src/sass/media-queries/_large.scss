@@ -15,7 +15,7 @@
     }
 
     .home {
-        &__blob {
+        &__img-file {
             width: 320px;
         }
 
@@ -25,8 +25,7 @@
     }
 
     .portfolio__content {
-        column-gap: 5rem;
-    }
+        column-gap: 5rem;    }
 
     .swiper-button-prev::after,
     .swiper-button-next::after {

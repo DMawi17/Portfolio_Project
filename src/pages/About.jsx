@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { v4 } from "uuid";
 import { useData } from "../contexts/data-hooks";
-import AboutSvg from "../assets/img/about.svg";
+import AboutSvg from "../assets/img/about_3d.png";
 import MainTitle from "../components/titles/MainTitle";
 import { MainBtn } from "../components/Buttons";
 
@@ -48,7 +48,9 @@ function About() {
             <MainTitle {...about_title} />
 
             <div className="about__container container grid">
-                <img src={AboutSvg} alt="3D character using computer" />
+                <div className="about__img">
+                    <img src={AboutSvg} alt="3D character using computer" className="about__img-file" />
+                </div>
 
                 <div className="about__data">
                     <motion.p
@@ -78,7 +80,8 @@ function About() {
                         }}
                     >
                         <a
-                            href="/"
+                            href="./doc/Dagmawi_Asegid_CV.pdf"
+                            download
                             className="button about__button button-flex"
                         >
                             <MainBtn {...aboutBtn} />

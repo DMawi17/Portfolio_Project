@@ -104,16 +104,16 @@ export const DataProvider = ({ children }) => {
         },
 
         contactBtn: [
-            { title: "Call Me", address: "+49 15168541398", icon: icons.phone, url: "images/phone.svg" },
+            { title: "Call Me", address: "+49 15168541398", icon: icons.phone },
             {
                 title: "Email",
                 address: "asegda17@gamil.com",
-                icon: icons.envelope, url: "images/email.svg"
+                icon: icons.envelope,
             },
             {
                 title: "Address",
                 address: "70771 Leinfelden-Echterdingen",
-                icon: icons.location, url: "images/map.svg"
+                icon: icons.location,
             },
         ],
 

@@ -1,7 +1,7 @@
 import Socials from "../components/Socials";
 import Intro from "../components/Intro";
 import { ScrollDownBtn } from "../components/Buttons";
-import IntroSvg from '../assets/img/intro.svg'
+import IntroSvg from '../assets/img/intro_3d.png'
 import { useData } from "../contexts/data-hooks";
 
 function LandingPage() {
@@ -13,7 +13,9 @@ function LandingPage() {
             <div className="home__container container grid">
                 <div className="home__content grid">
                     <Socials />
-                    <img src={IntroSvg} alt="" />
+                    <div className="home__img">
+                        <img src={IntroSvg} alt="A 3D character waving hand" className="home__img-file" />
+                    </div>
                     <Intro />
                 </div>
                 <ScrollDownBtn {...scrollDwnBtn} />
