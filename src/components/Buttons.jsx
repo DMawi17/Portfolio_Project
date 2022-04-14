@@ -101,6 +101,7 @@ function ScrollUpBtn() {
             {isVisible && (
                 <div
                     role="button"
+                    aria-label="scroll up"
                     className="scrollUp"
                     id="scroll-up"
                     onClick={scrollToTop}

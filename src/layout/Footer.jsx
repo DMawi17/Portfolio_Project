@@ -11,7 +11,7 @@ function Footer() {
             <div className="footer__bg">
                 <div className="footer__container container grid">
                     <div>
-                        <h1 className="footer__title">Mawi</h1>
+                        <h2 className="footer__title">Mawi</h2>
                         <span className="footer__subtitle">Web Developer</span>
                     </div>
 
