@@ -27,7 +27,6 @@
     .skills__icon,
     .skills__arrow {
         font-size: 2rem;
-        color: $clr-primary;
     }
 
     .qualification__section {
@@ -80,10 +79,12 @@
 
         /* Animating logo */
         &__logo {
-
             animation: animate 5s linear infinite;
-            color: $clr-bg-light;
+            color: $clr-icon-secondary;
 
+            &:hover {
+                color: $clr-icon-tertiary;
+            }
 
             @keyframes animate {
                 0% {
@@ -145,7 +146,7 @@
             column-gap: 2rem;
         }
 
-        &__blob {
+        &__img-file {
             width: 270px;
         }
 
@@ -161,6 +162,10 @@
 
         &__img {
             width: 350px;
+
+            img {
+                max-width: none;
+            }
         }
 
         &__description {
@@ -177,15 +182,10 @@
     }
 
     .qualification {
-
-        &__mainTitle {
-            border: 2px solid transparent; // FIXME:
-
-            background-image: url(../../assets/img/edu.png);
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: right;
-        }
+        background-image: url(../../assets/img/education_3d.png);
+        background-size: 20%;
+        background-repeat: no-repeat;
+        background-position: 95% 10%;
 
         &__tabs {
             justify-content: space-around;
@@ -200,8 +200,17 @@
         }
     }
 
-    .portfolio_img {
-        width: 320px;
+    .portfolio {
+        &_img {
+            width: 320px;
+        }
+    }
+
+    .contact {
+        background-image: url(../../assets/img/message_3d.png);
+        background-size: 15%;
+        background-repeat: no-repeat;
+        background-position: 20% 5%;
     }
 
     .mySwiper {
@@ -230,14 +239,4 @@
             margin-top: 4.5rem;
         }
     }
-
-    // .whoops {
-    //     height: calc(100vh - $mb-20);
-
-    //     h2 {
-    //         text-align: center;
-    //         color: $clr-txt-light;
-    //         font-size: $fs-body;
-    //     }
-    // }
 }

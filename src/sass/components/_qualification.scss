@@ -1,6 +1,10 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
 .qualification {
+    &__icon {
+        color: $clr-icon-hover;
+    }
+
     &__tabs {
         display: flex;
         justify-content: space-between;
@@ -33,16 +37,16 @@
         display: inline-block;
         width: 13px;
         height: 13px;
-        background-color: $clr-primary;
         border-radius: 50%;
+        background-color: $clr-icon-tertiary;
     }
 
     &__line {
         display: block;
         width: 1px;
         height: 100%;
-        background-color: $clr-primary;
         transform: translate(6px, -7px);
+        background-color: $clr-icon-tertiary;
     }
 
     .cal__icon {

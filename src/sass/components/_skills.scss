@@ -1,87 +1,86 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
-.skills_container {
-    row-gap: 0;
-}
+.skills {
+    &_container {
+        row-gap: 0;
+    }
 
-.skills__header {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-bottom: $mb-25;
-}
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: $mb-25;
+    }
 
-.skills__icon,
-.skills__arrow {
-    font-size: 1.5rem;
-    color: $clr-primary;
-}
+    &__icon,
+    &__arrow {
+        font-size: 1.5rem;
+        color: $clr-icon-secondary;
+    }
 
-.skills__arrow {
-    cursor: pointer;
-}
+    &__arrow {
+        cursor: pointer;
+    }
 
-// .skills__icon {
-//     margin-right: $mb-075;
-// }
+    &__title {
+        font-style: $fs-h3;
+    }
 
-.skills__title {
-    font-style: $fs-h3;
-}
+    &__subtitle {
+        font-size: $fs-sm;
+        color: $clr-txt;
+    }
 
-.skills__subtitle {
-    font-size: $fs-sm;
-    color: $clr-txt;
-}
+    &__list {
+        row-gap: 1.5rem;
+        padding-left: 3.3rem;
+        height: max-content;
+        width: 90%;
+        margin-bottom: $mb-25;
+    }
 
-.skills__list {
-    row-gap: 1.5rem;
-    padding-left: 3.3rem;
-    height: max-content;
-    width: 90%;
-    margin-bottom: $mb-25;
-}
+    &__title {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: $mb-05;
+    }
 
-.skills__title {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: $mb-05;
-}
+    &__name {
+        font-style: $fs-body;
+        font-weight: $fw-reg;
+    }
 
-.skills__name {
-    font-style: $fs-body;
-    font-weight: $fw-reg;
-}
+    &__bar,
+    &__percentage {
+        height: 5px;
+        border-radius: 0.25rem;
+    }
 
-.skills__bar,
-.skills__percentage {
-    height: 5px;
-    border-radius: 0.25rem;
-}
+    &__bar {
+        background-color: $clr-primary-light;
+    }
 
-.skills__bar {
-    background-color: $clr-primary-light;
-}
+    &__percentage {
+        display: block;
+        background-color: $clr-primary;
+    }
 
-.skills__percentage {
-    display: block;
-    background-color: $clr-primary;
-}
+    &__html {
+        width: 90%;
+    }
 
-.skills__html {
-    width: 90%;
-}
-.skills__css {
-    width: 80%;
-}
+    &__css {
+        width: 80%;
+    }
 
-.skills__react,
-.skills__express {
-    width: 70%;
-}
+    &__react,
+    &__express {
+        width: 70%;
+    }
 
-.skills__javascript,
-.skills__nodejs,
-.skills__firebase {
-    width: 60%;
+    &__javascript,
+    &__nodejs,
+    &__firebase {
+        width: 60%;
+    }
 }

@@ -1,36 +1,36 @@
-@use "../utils/" as *;
+@use "../utils/"as *;
 
-.about__img {
-    background: lightgrey;
-    width: 200px;
-    border-radius: 0.5rem;
-    justify-self: center;
-    align-self: center;
-}
+.about {
+    &__description {
+        text-align: center;
+        margin-bottom: $mb-25;
+    }
 
-.about__description {
-    text-align: center;
-    margin-bottom: $mb-25;
-}
+    &__info {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: $mb-25;
+    }
 
-.about__info {
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: $mb-25;
-}
+    &__info-name {
+        font-size: $fs-sm;
+    }
 
-.about__info-name {
-    font-size: $fs-sm;
-}
+    &__info-title {
+        font-size: $fs-h2;
+        font-weight: $fw-semi-bold;
+        color: $clr-title;
+    }
 
-.about__info-title {
-    font-size: $fs-h2;
-    font-weight: $fw-semi-bold;
-    color: $clr-title;
-}
+    &__info-name,
+    &__info-title {
+        display: block;
+        text-align: center;
+    }
 
-.about__info-name,
-.about__info-title {
-    display: block;
-    text-align: center;
+    &__img {
+        max-width: 266px;
+        margin: auto;
+    }
+
 }

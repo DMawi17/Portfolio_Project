@@ -70,15 +70,15 @@ img {
 /* Scroll bar */
 ::-webkit-scrollbar {
     width: 0.8rem;
-    background-color: $clr-scroll-bar;
+    background-color: $clr-bg-icon;
     border-radius: 0.5rem;
 
     &-thumb {
-        background-color: $clr-scroll-thumb;
+        background-color: $clr-icon-hover;
         border-radius: 0.5rem;
 
         &:hover {
-            background-color: $clr-txt-light;
+            background-color: $clr-primary-hover;
         }
     }
 }
