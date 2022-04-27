@@ -106,10 +106,10 @@
         "portfolio_content": [
             {
                 "title": "Movie Website",
-                "description": "A website influenced by Netflix with animated interaction.",
+                "description": "A website influenced by Netflix with a search functionality.",
                 "BtnName": "Demo",
-                "img_url": "images/movie.png",
-                "link": "https://spa-movie-flix.netlify.app"
+                "img_url": "images/moviest.png",
+                "link": "https://moviest.live"
             },
             {
                 "title": "Admin Dashboard",
@@ -132,7 +132,6 @@
                 "img_url": "images/colors.png",
                 "link": "https://color-organiser.netlify.app"
             }
-            
         ]
     },
 
