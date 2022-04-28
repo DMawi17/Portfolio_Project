@@ -109,7 +109,7 @@
                 "description": "A website influenced by Netflix with a search functionality.",
                 "BtnName": "Demo",
                 "img_url": "images/moviest.png",
-                "link": "https://moviest.live"
+                "link": "https://moviestr.netlify.app/"
             },
             {
                 "title": "Admin Dashboard",
