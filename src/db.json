@@ -1,7 +1,7 @@
 {
     "intro": {
         "intro_title": {
-            "title": "Hi, I'm Mawi",
+            "title": "Hi, I'm Dagmawi",
             "subtitle": "Web Developer"
         },
         "intro_description": "I like to build attractive and easy to use applications for the web.",
@@ -16,11 +16,11 @@
     "about": {
         "about_title": { "title": "About Me", "subtitle": "Introduction" },
 
-        "about_description": "I'm a recent graduate from DCI gGmbH in MERN Stack technologies. During my studies, I completed a three-month internship program where I mainly focused on Front-end development. I have a keen interest in the internet of things. It helps me to learn them with ease.",
+        "about_description": "I'm a recent graduate from DCI gGmbH in MERN Stack technologies. During my studies, I completed a five-month internship program where I mainly focused on Front-end development. I have a keen interest in the internet of things. It helps me to learn them with ease.",
 
         "about_content": {
-            "experience": ["03", "Month", "experience"],
-            "projects": ["03", "Completed", "project"],
+            "experience": ["05", "Month", "experience"],
+            "projects": ["03", "Frontend", "project"],
             "companies": ["01", "Company", "worked"]
         }
     },
@@ -78,7 +78,7 @@
                 "subject": "Web Developer (intern)",
                 "company": "Active It Recruitment",
                 "place": "Remote",
-                "time": "01/2022 - 31/2022"
+                "time": "11/2021 - 03/2022"
             },
             {
                 "type": "education",
@@ -117,13 +117,6 @@
                 "BtnName": "Demo",
                 "img_url": "images/admin.png",
                 "link": "https://admindashboard-444e3.web.app"
-            },
-            {
-                "title": "Music Streaming Website",
-                "description": "A music streaming site to listen to and share music",
-                "BtnName": "Demo",
-                "img_url": "images/sound.png",
-                "link": "https://landing-page-for-music-site.netlify.app"
             },
             {
                 "title": "Color organizer",
