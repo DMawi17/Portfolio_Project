@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { v4 } from "uuid";
@@ -8,8 +8,6 @@ import MainTitle from "../components/titles/MainTitle";
 import { MainBtn } from "../components/Buttons";
 
 function About() {
-	const [isBtnDisableed, setIsBtnDisableed] = useState(false);
-
 	const { buttons, about } = useData();
 
 	const [ref, inView] = useInView({
