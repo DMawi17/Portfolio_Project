@@ -38,9 +38,9 @@
 				"skill_list": [
 					{ "title": "HTML", "data": "90%" },
 					{ "title": "CSS", "data": "80%" },
-					{ "title": "JavaScript", "data": "60%" },
-					{ "title": "React", "data": "70%" },
-					{ "title": "Redux", "data": "65%" },
+					{ "title": "JavaScript", "data": "80%" },
+					{ "title": "React", "data": "85%" },
+					{ "title": "Redux", "data": "75%" },
 					{ "title": "Angular", "data": "50%" },
 					{ "title": "TypeScript", "data": "50%" }
 				]
@@ -53,10 +53,9 @@
 				},
 
 				"skill_list": [
-					{ "title": "NodeJs", "data": "60%" },
-					{ "title": "Express", "data": "70%" },
-					{ "title": "MongoDB", "data": "75%" },
-					{ "title": "Firebase", "data": "60%" }
+					{ "title": "NodeJs", "data": "75%" },
+					{ "title": "Express", "data": "85%" },
+					{ "title": "MongoDB", "data": "75%" }
 				]
 			}
 		]
