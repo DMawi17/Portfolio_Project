@@ -1,139 +1,140 @@
 {
-    "intro": {
-        "intro_title": {
-            "title": "Hi, I'm Dagmawi",
-            "subtitle": "Web Developer"
-        },
-        "intro_description": "I build attractive and easy to use applications for the web.",
+	"intro": {
+		"intro_title": {
+			"title": "Hi, I'm Dagmawi",
+			"subtitle": "Web Developer"
+		},
+		"intro_description": "I build attractive and easy to use applications for the web.",
 
-        "socials": {
-            "LinkedIn": "https://www.linkedin.com/in/dmawi17/",
-            "Github": "https://github.com/DMawi17",
-            "Codepen": "https://codepen.io/dmawi17"
-        }
-    },
+		"socials": {
+			"LinkedIn": "https://www.linkedin.com/in/dmawi17/",
+			"Github": "https://github.com/DMawi17",
+			"Codepen": "https://codepen.io/dmawi17"
+		}
+	},
 
-    "about": {
-        "about_title": { "title": "About Me", "subtitle": "Introduction" },
+	"about": {
+		"about_title": { "title": "About Me", "subtitle": "Introduction" },
 
-        "about_description": "I'm a recent graduate from DCI gGmbH in MERN Stack technologies. During my studies, I completed a five-month internship program where I mainly focused on Front-end development. I have a keen interest in the internet of things. It helps me to learn them with ease.",
+		"about_description": "I'm a recent graduate from DCI gGmbH in MERN Stack technologies. During my studies, I completed a five-month internship program where I mainly focused on Front-end development. I have a keen interest in the internet of things. It helps me to learn them with ease.",
 
-        "about_content": {
-            "experience": ["05", "Month", "experience"],
-            "projects": ["03", "Frontend", "project"],
-            "companies": ["01", "Company", "worked"]
-        }
-    },
+		"about_content": {
+			"experience": ["05", "Month", "experience"],
+			"projects": ["03", "Frontend", "project"],
+			"companies": ["01", "Company", "worked"]
+		}
+	},
 
-    "skills": {
-        "skill_title": { "title": "Skills", "subtitle": "Technical levels" },
+	"skills": {
+		"skill_title": { "title": "Skills", "subtitle": "Technical levels" },
 
-        "skill_content": [
-            {
-                "skill_header": {
-                    "title": "Frontend development",
-                    "subtitle": "Three months experience"
-                },
+		"skill_content": [
+			{
+				"skill_header": {
+					"title": "Frontend development",
+					"subtitle": "Three months experience"
+				},
 
-                "skill_list": [
-                    { "title": "HTML", "data": "90%" },
-                    { "title": "CSS", "data": "80%" },
-                    { "title": "JavaScript", "data": "60%" },
-                    { "title": "React", "data": "70%" },
-                    { "title": "Redux", "data": "65%" }
-                ]
-            },
+				"skill_list": [
+					{ "title": "HTML", "data": "90%" },
+					{ "title": "CSS", "data": "80%" },
+					{ "title": "JavaScript", "data": "80%" },
+					{ "title": "React", "data": "85%" },
+					{ "title": "Redux", "data": "75%" },
+					{ "title": "Angular", "data": "50%" },
+					{ "title": "TypeScript", "data": "50%" }
+				]
+			},
 
-            {
-                "skill_header": {
-                    "title": "Backend Development",
-                    "subtitle": "Three months experience"
-                },
+			{
+				"skill_header": {
+					"title": "Backend Development",
+					"subtitle": "Three months experience"
+				},
 
-                "skill_list": [
-                    { "title": "NodeJs", "data": "60%" },
-                    { "title": "Express", "data": "70%" },
-                    { "title": "MongoDB", "data": "75%" },
-                    { "title": "Firebase", "data": "60%" }
-                ]
-            }
-        ]
-    },
+				"skill_list": [
+					{ "title": "NodeJs", "data": "75%" },
+					{ "title": "Express", "data": "85%" },
+					{ "title": "MongoDB", "data": "75%" }
+				]
+			}
+		]
+	},
 
-    "qualification": {
-        "qualification_title": {
-            "title": "Qualification & Experience",
-            "subtitle": "My journey"
-        },
-        "qualification_contents": [
-            {
-                "type": "education",
-                "subject": "Web Development",
-                "company": "DCI gGmbH",
-                "place": "Berlin",
-                "time": "10/2020 - 01/2022"
-            },
-            {
-                "type": "work",
-                "subject": "Web Developer (intern)",
-                "company": "Active It Recruitment",
-                "place": "Remote",
-                "time": "11/2021 - 03/2022"
-            },
-            {
-                "type": "education",
-                "subject": "Accounting and Statistics",
-                "company": "Middlesex University",
-                "place": "London",
-                "time": "09/2009 - 09/2012"
-            },
-            {
-                "type": "work",
-                "subject": "Senior Cabin Crew",
-                "company": "Laudamotion",
-                "place": "Stuttgart",
-                "time": "01/2019 - 12/2020"
-            }
-        ]
-    },
+	"qualification": {
+		"qualification_title": {
+			"title": "Qualification & Experience",
+			"subtitle": "My journey"
+		},
+		"qualification_contents": [
+			{
+				"type": "education",
+				"subject": "Web Development",
+				"company": "DCI gGmbH",
+				"place": "Berlin",
+				"time": "10/2020 - 01/2022"
+			},
+			{
+				"type": "work",
+				"subject": "Web Developer (intern)",
+				"company": "Active It Recruitment",
+				"place": "Remote",
+				"time": "11/2021 - 03/2022"
+			},
+			{
+				"type": "education",
+				"subject": "Accounting and Statistics",
+				"company": "Middlesex University",
+				"place": "London",
+				"time": "09/2009 - 09/2012"
+			},
+			{
+				"type": "work",
+				"subject": "Senior Cabin Crew",
+				"company": "Laudamotion",
+				"place": "Stuttgart",
+				"time": "01/2019 - 12/2020"
+			}
+		]
+	},
 
-    "portfolio": {
-        "portfolio_title": {
-            "title": "Portfolio",
-            "subtitle": "Most recent work"
-        },
+	"portfolio": {
+		"portfolio_title": {
+			"title": "Portfolio",
+			"subtitle": "Most recent work"
+		},
 
-        "portfolio_content": [
-            {
-                "title": "Movie Website",
-                "description": "A website influenced by Netflix with a search functionality.",
-                "BtnName": "Demo",
-                "img_url": "images/moviest.png",
-                "link": "https://moviestr.netlify.app/"
-            },
-            {
-                "title": "Admin Dashboard",
-                "description": "An admin dashboard site with graphical representation.",
-                "BtnName": "Demo",
-                "img_url": "images/admin.png",
-                "link": "https://admindashboard-444e3.web.app"
-            },
-            {
-                "title": "Color organizer",
-                "description": "My first React app. Add, rate, and delete your favorite colors.",
-                "BtnName": "Demo",
-                "img_url": "images/colors.png",
-                "link": "https://color-organiser.netlify.app"
-            }
-        ]
-    },
+		"portfolio_content": [
+			{
+				"title": "Movie Website",
+				"description": "A website influenced by Netflix with a search functionality.",
+				"BtnName": "Demo",
+				"img_url": "images/moviest.png",
+				"link": "https://moviestr.netlify.app/"
+			},
+			{
+				"title": "Admin Dashboard",
+				"description": "An admin dashboard site with graphical representation.",
+				"BtnName": "Demo",
+				"img_url": "images/admin.png",
+				"link": "https://admindashboard-444e3.web.app"
+			},
+			{
+				"title": "Color organizer",
+				"description": "My first React app. Add, rate, and delete your favorite colors.",
+				"BtnName": "Demo",
+				"img_url": "images/colors.png",
+				"link": "https://color-organiser.netlify.app"
+			}
+		]
+	},
 
-    "contact": {
-        "contact_title": {
-            "title": "Contact",
-            "subtitle": "Get in touch"
-        }
-    },
+	"contact": {
+		"contact_title": {
+			"title": "Contact",
+			"subtitle": "Get in touch"
+		}
+	},
 
-    "footer": ["home", "about", "portfolio"]
+	"footer": ["home", "about", "portfolio"]
 }
