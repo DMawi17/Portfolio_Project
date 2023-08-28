@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 import { v4 } from "uuid";
@@ -8,89 +8,95 @@ import MainTitle from "../components/titles/MainTitle";
 import { MainBtn } from "../components/Buttons";
 
 function About() {
-    const { buttons, about } = useData();
+	const [isBtnDisableed, setIsBtnDisableed] = useState(false);
 
-    const [ref, inView] = useInView({
-        triggerOnce: true,
-        threshold: 0.5,
-    });
+	const { buttons, about } = useData();
 
-    const animation = useAnimation();
+	const [ref, inView] = useInView({
+		triggerOnce: true,
+		threshold: 0.5,
+	});
 
-    const { about_title, about_description, about_content } = about;
-    const { aboutBtn } = buttons;
-    const arrContent = Object.values(about_content);
+	const animation = useAnimation();
 
-    useEffect(() => {
-        if (inView) {
-            animation.start({
-                opacity: 1,
-            });
-        }
-        if (!inView) {
-            animation.start({ opacity: 0 });
-        }
-    }, [animation, inView]);
+	const { about_title, about_description, about_content } = about;
+	const { aboutBtn } = buttons;
+	const arrContent = Object.values(about_content);
 
-    const renderAboutList = ([num, time, keyword]) => {
-        return (
-            <div key={v4()}>
-                <span className="about__info-title">{num}</span>
-                <span className="about__info-name">
-                    {time} <br /> {keyword}{" "}
-                </span>
-            </div>
-        );
-    };
+	useEffect(() => {
+		if (inView) {
+			animation.start({
+				opacity: 1,
+			});
+		}
+		if (!inView) {
+			animation.start({ opacity: 0 });
+		}
+	}, [animation, inView]);
 
-    return (
-        <section ref={ref} className="about section" id="about">
-            <MainTitle {...about_title} />
+	const renderAboutList = ([num, time, keyword]) => {
+		return (
+			<div key={v4()}>
+				<span className="about__info-title">{num}</span>
+				<span className="about__info-name">
+					{time} <br /> {keyword}{" "}
+				</span>
+			</div>
+		);
+	};
 
-            <div className="about__container container grid">
-                <div className="about__img">
-                    <img src={AboutSvg} alt="3D character using computer" className="about__img-file" />
-                </div>
+	return (
+		<section ref={ref} className="about section" id="about">
+			<MainTitle {...about_title} />
 
-                <div className="about__data">
-                    <motion.p
-                        animate={animation}
-                        transition={{
-                            duration: 1,
-                        }}
-                        className="about__description"
-                    >
-                        {about_description}
-                    </motion.p>
+			<div className="about__container container grid">
+				<div className="about__img">
+					<img
+						src={AboutSvg}
+						alt="3D character using computer"
+						className="about__img-file"
+					/>
+				</div>
 
-                    <motion.div
-                        animate={animation}
-                        transition={{
-                            duration: 2,
-                        }}
-                        className="about__info"
-                    >
-                        {arrContent.map((elem) => renderAboutList(elem))}
-                    </motion.div>
+				<div className="about__data">
+					<motion.p
+						animate={animation}
+						transition={{
+							duration: 1,
+						}}
+						className="about__description"
+					>
+						{about_description}
+					</motion.p>
 
-                    <motion.div
-                        animate={animation}
-                        transition={{
-                            duration: 3,
-                        }}
-                    >
-                        <a
-                            href="./doc/Dagmawi_Asegid_CV.pdf"
-                            download
-                            className="button about__button button-flex"
-                        >
-                            <MainBtn {...aboutBtn} />
-                        </a>
-                    </motion.div>
-                </div>
-            </div>
-        </section>
-    );
+					<motion.div
+						animate={animation}
+						transition={{
+							duration: 2,
+						}}
+						className="about__info"
+					>
+						{arrContent.map((elem) => renderAboutList(elem))}
+					</motion.div>
+
+					<motion.div
+						animate={animation}
+						transition={{
+							duration: 3,
+						}}
+					>
+						<a
+							href="./doc/Dagmawi_Asegid_CV.pdf"
+							// download // do not download for now
+							className="button about__button button-flex"
+						>
+							<MainBtn {...aboutBtn} />
+						</a>
+					</motion.div>
+				</div>
+			</div>
+		</section>
+	);
 }
 
 export default About;
